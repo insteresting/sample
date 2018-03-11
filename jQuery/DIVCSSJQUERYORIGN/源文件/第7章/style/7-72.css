@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family:宋体;
+	font-size:12px;
+	color:#999;
+	background-image:url(../images/7201.gif);
+	background-repeat:repeat-x;
+}
+#box{
+	width:208px;
+	height:190px;
+	background-image:url(../images/7202.jpg);
+	background-repeat:no-repeat;
+	margin:100px auto 0px auto;
+	padding-top:60px;
+	text-align:center;
+}
+#select,#select2,#select3,#select4{
+	width:130px;
+	height:22px;
+	margin-top:6px;
+	margin-bottom:6px;
+	border:#CCC solid 1px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE　HTML>
+<html>
+  <head>
+    <title>jQuery使用底层的ajax()函数</title>
+    <meta http-equiv="Content-Type" conten"text/html; charset=utf-8"/>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+    function sendAjax(){
+    $.ajax({//调用ajax()函数，参数为选项object
+    url: 'data.txt',//url地址
+    type: 'GET',//HTTP请求的方法，这里是GET
+    dataType:'text',//预期返回数据类型
+    data: null,//POST需要的数据 
+    error:function(){//当发生错误时候的回调
+    alert('error');
+    },
+    timeout:function(){ //发生请求超时的回调
+    alert('time out');
+    },
+    success: function(data) { //成功以后的回调，也就是readyStatus=4且status=200
+    alert(data);
+    }
+    });
+    }
+</script>
+</head>
+  <body style="text-align:center">
+    <h1>HELLO AJAX，你好，波比</h1>
+  <input type="button" value="AJAX" onclick="sendAjax();"/>
+</body>
+</html>
+    
+    
+    
+  
+				      

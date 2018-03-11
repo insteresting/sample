@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>首页</title>
+    <!--添加对于第三方插件的引用-->
+	<link rel="stylesheet" type="text/css" href="third_party/jquery-number-slideshow/css/number_slideshow.css" />
+	<link rel="stylesheet" type="text/css" href="third_party/jquery-fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script type="text/javascript" src="third_party/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="third_party/jquery-number-slideshow/js/number_slideshow.js"></script>
+	<script type="text/javascript" src="third_party/jquery-fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <!--自己写的代码定义在如下的2个js文件中-->
+	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+</head>
+<body>
+	<div id="site_header_wrap">
+		<div id="site_header">
+			<div class="logo">
+				<a href="home.htm"><img src="images/logo.png" alt="" /></a>
+			</div>
+			<div class="shortcut">
+				<ul>
+					<li><a href="javascript:void(0);" id="signin">登录</a></li>
+					<li class="line"></li>
+					<li class="last"><a href="javascript:void(0);" id="register">免费注册</a></li>
+				</ul>
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="home"><a href="home.htm"></a></li>
+					<li><a href="pricing.htm">产品价格</a></li>
+					<li><a href="blog.htm">产品文档</a></li>
+					<li><a href="sample.htm">开发用例</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="banner_wrap">
+		<div class="banner">
+			<div class="left">
+				<div class="desc">
+					<h2>WisOne</h2>
+					<h3>像编写桌面程序一样编写 Web 程序</h3>
+					<p>基于云端的开发、调试、编译和部署应用程序</p>
+					<p>跨平台，无需安装，即开即用</p>
+					<p>源代码协作、共享和发现</p>
+				</div>
+				<div class="buttons">
+					<a class="video" id="video" href="http://player.youku.com/player.php/sid/XNjA0MzIwODEy/v.swf">演 示 视 频</a>
+					<a class="try" href="platform.htm">立 即 体 验</a>
+					<div class="notice">适用于 IE9+, Chrome, Firefox, Safari</div>
+				</div>
+			</div>
+            <!--网页幻灯播放栏-->
+			<div class="right">              
+                <!--要进幻灯播放的图片列表，id和CSS要符合匹配的CSS-->
+				<div id="number_slideshow" class="number_slideshow">
+					<ul>
+						<li><a href="javascript:void(0);">
+                        <img src="images/banner/example1.jpg" width="680" height="330" alt="" />
+                        </a></li>
+						<li><a href="javascript:void(0);">
+                        <img src="images/banner/example2.jpg" width="680" height="330" alt="" />
+                        </a></li>
+						<li><a href="javascript:void(0);">
+                        <img src="images/banner/example3.jpg" width="680" height="330" alt="" />
+                        </a></li>
+						<li><a href="javascript:void(0);">
+                        <img src="images/banner/example4.jpg" width="680" height="330" alt="" />
+                        </a></li>
+					</ul>
+                    <!--幻灯播放右下角的导航数字栏，CSS要匹配number-sildeshow的CSS定义-->
+					<ul class="number_slideshow_nav">
+						<li><a href="javascript:void(0);">1</a></li>
+						<li><a href="javascript:void(0);">2</a></li>
+						<li><a href="javascript:void(0);">3</a></li>
+						<li><a href="javascript:void(0);">4</a></li>
+					</ul>
+					<div style="clear: both"></div>
+				</div>		
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="container">
+		<div class="noise" style="border-bottom: none;">
+			<div class="hr">
+				<div class="slogan">
+					<h2>随时编程&nbsp;轻松共享</h2>
+					<p>WisOne 可以让开发者在任何时间、任何地点编辑同样的代码，打开浏览器就可以继续编辑，无需安装，无需等待。</p>
+					<p>可视化的界面设计、可视化数据库建模等先进特性，让编程轻松有趣，不再枯燥。基于云端的 IDE 可以与世界上任何地方的开发人员分享技巧和经验，增进团队协作氛围。</p>
+				</div>
+			</div>
+		</div>
+		<div class="noise">
+			<div class="topic">
+				<h3>WisOne 是什么？</h3>
+				<div>
+					<p>WisOne 是一个基于 JavaScript 和 Node.js 的应用程序开发平台，具有强大的可视化编程特色，它使用 TypeScript 作为开发语言，提供了类型检查、调试、编译等特性支持。</p>
+				</div>
+			</div>
+			<div class="topic">
+				<h3>谁会使用 WisOne？</h3>
+				<div>
+					<p>作为一名应用程序开发者，如果您工作地点不固定，不想频繁安装和切换开发环境，或者是需要一款可视化的 Web 开发环境，WisOne 是您明智的选择。</p>
+				</div>
+			</div>
+			<div class="topic">
+				<h3>为什么使用 WisOne？</h3>
+				<div>
+					<p>即时开发和分享，可以让您随时随地将想法变成作品；高效的可视化开发环境，可以大大提升 Web 开发的生产效率；可视化的数据建模工具，可以让产品跨平台、跨数据库；协作和分享功能，让您远离信息技术孤岛。</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="third_party_wrap">
+		<div id="third_party">
+			<div class="nodejs_wrap">
+				<div class="nodejs">
+					<a class="link" href="http://nodejs.org/" target="_blank"></a>
+					<div class="desc">
+						<h3>无缝整合 Node.js</h3>
+						<p>WisOne 无缝集成 Node.js，可以创建任何强大的服务器程序，Web 客户端程序，IDE 提供了 Node.js 的代码自动完成，实时错误信息提示并且可以运行和调试 Node.js 应用程序。</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="typescript_wrap">
+				<div class="typescript">
+					<a class="link" href="http://www.typescriptlang.org/" target="_blank"></a>
+					<div class="desc">
+						<h3>使用 TypeScript，强类型的 JavaScript 语言</h3>
+						<p>WisOne 使用了 TypeScript 作为编程语言，它支持类型检查、泛型、接口、类、继承、多态等 JavaScript 难以实现的功能，使得在 WisOne 中构建大型可扩展的应用程序不再是难题。</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="site_footer">
+		<p>版权所有&copy;2013 智云网 未经许可不得复制、转载或摘编，违者必究！</p>
+		<p>粤 ICP 备 13059398 号</p>
+	</div>
+<div id="checkin_wrap" class="popup_wrap" style="display: none;">
+	<p>本站正在试用中...</p>
+	<p>如果您对我们的项目感兴趣，请登记您的电子邮件，以便能及时收到我们的最新讯息！</p>
+	<form action="" id="checkin_form" method="post">
+		<label class="label" for="checkin_email">电子邮件地址：</label>
+		<input class="input" type="text" id="checkin_email" name="checkin_email" value="" maxlength="50" />
+		<span class="message" style="display: none;">请输入一个有效的电子邮件地址！</span>
+		<input class="submit" id="btn_checkin" type="button" value="登 记" />
+	</form>
+	<a class="close" id="checkin_close" href="javascript:void(0);" title="关闭窗口"></a>
+	<span class="notice">注：您的电子邮件只是作为登记使用，<br />我们将为您保密，并保证不会用于其它商业用途。</span>
+</div>
+<div id="signin_wrap" class="popup_wrap" style="display: none;">
+	<p>请输入您的登录信息</p>
+	<form action="" id="signin_form" method="post">
+		<label class="label" for="signin_email">电子邮件地址：</label>
+		<input class="input" type="text" id="signin_email" name="signin_email" value="" maxlength="50" />
+		<span class="message" style="display: none;">请输入一个有效的电子邮件地址！</span>
+		<label class="label" for="signin_password">密码：</label>
+		<input class="input" type="password" id="signin_password" name="signin_password" value="" maxlength="50" />
+		<input class="submit" id="btn_signin" type="button" value="登 录" />
+	</form>
+	<a class="close" id="signin_close" href="javascript:void(0);" title="关闭窗口"></a>
+</div>
+<div id="black_overlay"></div>
+</body>
+</html>

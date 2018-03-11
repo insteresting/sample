@@ -1,0 +1,36 @@
+-- phpMyAdmin SQL Dump
+-- version 3.5.2
+-- http://www.phpmyadmin.net
+--
+-- 主机: localhost
+-- 生成日期: 2017 年 01 月 19 日 09:06
+-- 服务器版本: 5.5.25a
+-- PHP 版本: 5.4.4
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+--创建表“”栏目
+CREATE TABLE IF NOT EXISTS `lanmu` (
+  `pid` int(10) unsigned NOT NULL,
+  `name` varchar(20) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
+  KEY `pid` (`pid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+-将数据插入到表中
+INSERT INTO `lanmu` (`pid`, `name`) VALUES
+(1, '栏目1'),
+(2, 'jQuery很厉害'),
+(3, '火车头');
+CREATE TABLE IF NOT EXISTS `wenzhang` (
+  `id` int(20) unsigned NOT NULL,
+  `title` varchar(20) CHARACTER SET utf8NOT NULL,
+  `author` varchar(20) CHARACTER SET utf8 NOT NULL,
+  `neirong` text CHARACTER SET utf8 NOT NULL,
+  `date` date NOT NULL,
+  KEY `id` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+--插入一些文章的内容
+INSERT INTO `wenzhang` (`id`, `title`, `author`, `neirong`, `date`) VALUES
+(1, 'jQuery Mobile实战01', '孙悟空', '许多………版本。', '2017-09-19'),
+(2, 'jQuery Mobile实战02', '黑猫警长', '现如……一个问题。', '2017-09-18'),
+(3, 'jQuery Mobile实战03', '乱入小五郎', 'PHP …… 平台。\r\n\r\n', '2017-09-17'),
+(4, '测试用的题目', '其实我是作者', 'HTML ……负起了 HTML 标准化的使命，并在 HTML 4.0之外创造出样式（Style）。\r\n\r\n所有的主流浏览器均支持层叠样式表。\r\n', '2017-09-06');

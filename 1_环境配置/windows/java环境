@@ -1,0 +1,5 @@
+新建系统变量 变量名JAVA_HOME  变量值C:\Program Files (x86)\Java\jdk1.7.0_40
+找到Path系统变量，编辑，在变量值开始处加上%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
+找到系统变量CLASSPATH,没有就新建系统变量，
+变量值.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+

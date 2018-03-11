@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="name" content="" />
+	<meta http-equiv="title" content="" />
+	<meta http-equiv="keywords" content="" />
+	<meta http-equiv="description" content="" />
+	<title>WisOne</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/platform.css" />
+	<script type="text/javascript" src="third_party/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>
+</head>
+<body>
+	<div id="platform_header">
+		<div class="logo">
+			<a href="home.htm"><img src="images/logo_small.png" alt="" /></a>
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="home"><a href="home.htm"></a></li>
+				<li><a href="pricing.htm">产品价格</a></li>
+				<li><a href="blog.htm">产品文档</a></li>
+				<li><a href="sample.htm">开发用例</a></li>
+				<li><a href="javascript:void(0);" id="signin">登录</a></li>
+				<li><a href="javascript:void(0);" id="register">免费注册</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="platform_wrap">
+		IDE
+	</div>
+	<div id="site_footer">
+		<p>版权所有&copy;2013 智云网 未经许可不得复制、转载或摘编，违者必究！</p>
+		<p>粤 ICP 备 13059398 号</p>
+	</div>
+<div id="checkin_wrap" class="popup_wrap" style="display: none;">
+	<p>本站正在试用中...</p>
+	<p>如果您对我们的项目感兴趣，请登记您的电子邮件，以便能及时收到我们的最新讯息！</p>
+	<form action="" id="checkin_form" method="post">
+		<label class="label" for="checkin_email">电子邮件地址：</label>
+		<input class="input" type="text" id="checkin_email" name="checkin_email" value="" maxlength="50" />
+		<span class="message" style="display: none;">请输入一个有效的电子邮件地址！</span>
+		<input class="submit" id="btn_checkin" type="button" value="登 记" />
+	</form>
+	<a class="close" id="checkin_close" href="javascript:void(0);" title="关闭窗口"></a>
+	<span class="notice">注：您的电子邮件只是作为登记使用，<br />我们将为您保密，并保证不会用于其它商业用途。</span>
+</div>
+<div id="signin_wrap" class="popup_wrap" style="display: none;">
+	<p>请输入您的登录信息</p>
+	<form action="" id="signin_form" method="post">
+		<label class="label" for="signin_email">电子邮件地址：</label>
+		<input class="input" type="text" id="signin_email" name="signin_email" value="" maxlength="50" />
+		<span class="message" style="display: none;">请输入一个有效的电子邮件地址！</span>
+		<label class="label" for="signin_password">密码：</label>
+		<input class="input" type="password" id="signin_password" name="signin_password" value="" maxlength="50" />
+		<input class="submit" id="btn_signin" type="button" value="登 录" />
+	</form>
+	<a class="close" id="signin_close" href="javascript:void(0);" title="关闭窗口"></a>
+</div>
+<div id="black_overlay"></div>
+</body>
+</html>

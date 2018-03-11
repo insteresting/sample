@@ -1,0 +1,29 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>自定义插件使用示例</title>
+<style type="text/css">
+   #test{
+	   font-size:9pt;	   
+	   width:500px;
+	   height:50px;
+   }
+</style>
+<!--首先添加对jQuery库的引用-->
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<!--然后添加对jQuery插件库的引用-->
+<script type="text/javascript" src="CustomPlugin/jquery.border.js"></script>
+<script type="text/javascript">
+   //在页面加载时，定义div的外边框
+   $(document).ready(function(e) {
+	   //应用自定义的border插件
+	   $("#test").border({width:"5px","line":"dotted",color:"blue"}).css("background","green");
+});
+</script>
+</head>
+
+<body>
+<div id="test">这个示例演示了自定义对象级别的插件的使用方法</div>
+</body>
+</html>

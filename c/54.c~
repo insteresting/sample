@@ -1,0 +1,51 @@
+/*程序功能:1.求出该文件中共有多少个正整数totNum;
+ * 2.求这些正整数右移1位二进制后，产生的新数是偶数的数的个数totCnt,以及满足此条件的这些正整数(右移前的值)的算术平均值totPjz。最后main()函数调用函数WriteDat()把所求的结果输出到out.dat文件中
+ * 时间:
+ * 作者:
+ *
+ *
+ */
+#include<stdio.h>
+#define MAXNUM 200
+int xx[MAXNUM];
+int totNum = 0; //文件in.dat中共有多少个正整数
+int totCnt = 0; //符合条件的正整数的个数
+double totPjz = 0.0; //平均值
+int ReadDat(void);
+void WriteDat(void);
+void CalValue(void)
+{
+
+}
+
+
+
+
+
+void main()
+{
+ int i;
+ for( i = 0; i < MAXNUM; i++)
+	 xx [ i ] =0;
+ 	
+
+}
+void readDat()
+{
+	FILE *fp; //定义文件指针变量fp
+	int i; //定义整型变量i
+	fp = fopen("in.dat","r"); //以只读的方式打开文件in.dat，并用fp指向这个文件
+	for (i = 0; i < 300; i++)
+		fscanf(fp,"%d",&a[i]); //从文件in.dat中读取300个四位数到数组a中
+	fclose(fp); //关闭文件in.dat
+}
+void writeDat()
+{
+	FILE  fp; //定义文件指针变量fp
+	int i; //定义整型变量i
+	fp = fopen("out.dat","w"); //以只写的方式打开文件out.dat，并用fp指向这个文件
+	fprintf(fp,"%d\n",cnt); //把素数的个数写入到文件out.dat
+	for(i = 0; i < cnt; i++)
+		fprintf(fp,"%d\n",b[i]); //把数组b中的所有元素写入到文件out.dat
+	fclose(fp); //关闭文件out.dat
+}

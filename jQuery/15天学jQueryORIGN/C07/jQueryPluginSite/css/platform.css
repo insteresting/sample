@@ -1,0 +1,58 @@
+#platform_header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 4px 0 10px 0;
+	width: 100%;
+	min-width: 800px;
+	height: 23px;
+	background: url(../images/bg_header.png) repeat-x 0 100%;
+}
+#platform_header .logo {
+	float: left;
+	margin: 0;
+	padding: 0 0 0 10px;
+	width: 116px;
+	height: 23px;
+}
+#platform_header .nav {
+	float: right;
+	margin: 0;
+	padding: 0 10px 0 0;
+	width: 600px;
+	height: 23px;
+}
+#platform_header .nav ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	height: 23px;
+	list-style: none;
+	font-size: 14px;
+}
+#platform_header .nav ul li {
+	float: left;
+	padding: 0 0 0 12px;
+	height: 23px;
+	line-height: 23px;
+}
+#platform_header .nav ul li.home {
+	padding: 0;
+	width: 16px;
+	height: 23px;
+}
+#platform_header .nav ul li.home a {
+	display: block;
+	width: 16px;
+	height: 23px;
+	background: url(../images/btn_home.png) no-repeat 0 50%;
+}
+#platform_header .nav ul li.home a:hover {
+	background-position: -16px 50%;
+}
+
+#platform_wrap {
+	padding-top: 37px;
+	height: 1000px;
+}

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>     
+<html>     
+<head>     
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<!--<script src="cordova.js"></script>-->   
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css" />     
+<script src="jquery.js"></script>     
+<script src="jquery.mobile-1.4.5.js"></script>  
+<script>
+	$( "#mypanel" ).trigger( "updatelayout" ); 
+</script> 
+<script type="text/javascript">
+    $(document).ready(function(){
+      $("div").bind("swiperight", function(event) {
+        $( "#mypanel" ).panel( "open" );
+      });  
+    });
+</script>
+</head>               
+<body>
+	<div data-role="page" data-theme="c">
+    	<div data-role="panel" id="mypanel" data-theme="a">
+        	<ul data-role="listview" data-inset="true" data-theme="a">
+				<li><a href="#">jQuery Mobile实战1</a></li>
+            	<li><a href="#">jQuery Mobile实战2</a></li>
+            	<li><a href="#">jQuery Mobile实战3</a></li>
+                <li><a href="#">jQuery Mobile实战4</a></li>
+            	<li><a href="#">jQuery Mobile实战5</a></li>
+            	<li><a href="#">jQuery Mobile实战6</a></li>
+                <li><a href="#">jQuery Mobile实战7</a></li>
+            	<li><a href="#">jQuery Mobile实战8</a></li>
+            	<li><a href="#">jQuery Mobile实战9</a></li>
+            </ul>
+		</div>
+        <div data-role="header" data-position="fixed" data-theme="c">
+        	<a href="#" data-icon="back">返回</a>
+        	<h1>文章题目</h1>
+        </div>
+        <div data-role="content">
+        	<h4 style="text-align:center;"><small>作者：李柯泉 发表日期：2013/9/18 19:27</small></h4>
+            <h4>这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容</h4>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="c">
+        	<div data-role="navbar">
+				<ul>
+					<li><a id="chat" href="#" data-icon="arrow-l">上一篇</a></li>        
+					<li><a id="email" href="#" data-icon="arrow-r">下一篇</a></li>                
+				</ul>
+			</div>
+        </div>
+	</div>
+</body>
+</html>

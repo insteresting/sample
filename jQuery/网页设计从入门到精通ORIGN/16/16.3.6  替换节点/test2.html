@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+div { margin:1em; }					/* 为div元素定义外边界 */
+#red { border:solid 1px red; }			/* 为红盒子定义边框样式 */
+#blue { border:solid 1px blue; }		/* 为蓝盒子定义边框样式 */
+</style>
+<script>
+window.onload = function() {						// 定义当页面完成初始化后执行的脚本函数
+    var ok = document.getElementById("ok");		// 获取按钮元素的引用指针
+    ok.onclick = function(){						// 为按钮注册一个鼠标单击事件处理函数
+        var red = document.getElementById("red");	// 获取红盒子的引用指针
+        var blue = document.getElementById("blue");	// 获取蓝盒子的引用指针
+        var h1 = document.getElementsByTagName("h1")[0]; // 获取一级标题的引用指针
+	        var del_h1 = red.replaceChild(blue,h1); 		// 把红盒子中包含的一级标题替换为蓝盒子
+	        red.parentNode.insertBefore(del_h1,red); 	//把替换掉的一级标题插入到红盒子前面
+    }
+}
+</script>
+</head>
+<body>
+<div id="red">
+    <h1>红盒子</h1>
+</div>
+<div id="blue">蓝盒子</div>
+<button id="ok">替换</button>
+</body>
+</html>

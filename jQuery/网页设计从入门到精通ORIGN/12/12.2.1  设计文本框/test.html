@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表单样式</title>
+<style type="text/css">
+body { font-size: 14px;	/* 文本大小 */ }
+input {
+    width: 300px; 	/* 设置宽度 */
+    height: 25px;	/* 设置高度 */
+    font-size: 14px; 	/* 文本大小*/
+    line-height: 25px;	/* 设置行高 */
+    border: 1px solid #339999; 	/* 设置边框属性 */
+    color: #FF0000;	/* 字体颜色 */
+    background-color: #99CC66;	/* 背景颜色 */
+}
+textarea {
+    width: 400px;	/* 设置宽度 */
+    height: 300px;	/* 设置s高度 */
+    line-height: 24px;	/* 设置行高 */
+    border: none; 	/* 清除默认边框设置 */
+    border: 1px solid #ff7300; 	/* 设置边框属性 */
+    background: #99CC99 url(images/1.jpg) no-repeat;	/* 设置宽度 */
+    display: block;	/* 背景颜色*/
+    margin-left: 60px;	/* 设置外间距 */
+}
+</style>
+</head>
+<body>
+<form>
+    <p>
+        <label for="user">文本框：</label>
+        <input type="text" value="看我的颜色"  id="user" name="user" />
+    </p>
+    <p>
+        <label for="text">文本区域：</label>
+        <textarea   id="text" name="text">看我背景</textarea>
+    </p>
+</form>
+</body>
+</html>

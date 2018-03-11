@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+</style>
+<script>
+try{
+    request = new XMLHttpRequest();							//兼容最新IE和其他现代浏览器
+}
+catch (e){
+    try{
+        request = new ActiveXObject("Msxml2.XMLHTTP");		//兼容IE6浏览器
+    }
+    catch (e){
+        try{
+            request = new ActiveXObject("Microsoft.XMLHTTP");	//兼容老版本IE浏览器
+        }
+        catch (e){
+            alert("初始化XMLHttpRequest对象失败，请检查浏览器是否支持XMLHttpRequest组件。");
+        }
+    }
+}
+</script>
+</head>
+<body>
+</body>
+</html>

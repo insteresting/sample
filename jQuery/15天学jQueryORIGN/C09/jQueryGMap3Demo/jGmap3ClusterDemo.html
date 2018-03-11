@@ -1,0 +1,141 @@
+<html>    
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>        
+    <script type="text/javascript" src="js/gmap3.js"></script> 
+    <script type="text/javascript" src="js/mcdo.js"></script> 
+      <style>
+/* 定义整体页面容器CSS样式 */
+#container{
+position:relative;
+height:700px;
+}
+/* 定义地图容器CSS样式 */
+#googleMap{
+border:1px dashed #C0C0C0;
+width:90%;
+height:400px;
+}
+/* 定义cluster集群CSS样式 */
+.cluster{
+  color: #FFFFFF;
+  text-align:center;
+  font-family: 'Arial, Helvetica';
+  font-size:11px;
+  font-weight:bold;
+  cursor: pointer;
+}
+.cluster-1{
+  background:url(images/m1.png) no-repeat;
+  line-height:53px;
+  width: 53px;
+  height: 52px;
+}
+.cluster-2{
+  background:url(images/m2.png) no-repeat;
+  line-height:53px;
+  width: 56px;
+  height: 55px;
+}
+.cluster-3{
+  background:url(images/m3.png) no-repeat;
+  line-height:66px;
+  width: 66px;
+  height: 65px;
+}
+/* infobulle */
+.infobulle{
+overflow: hidden;
+cursor: default;
+clear: both;
+position: relative;
+height: 34px;
+padding: 0pt;
+background-color: rgb(57, 57, 57);
+border-radius: 4px 4px;
+-moz-border-radius: 4px 4px;
+-webkit-border-radius: 4px 4px;
+border: 1px solid #2C2C2C;
+}
+.infobulle .bg{
+font-size:1px;
+height:16px;
+border:0px;
+width:100%;
+padding: 0px;
+margin:0px;
+background-color:#5E5E5E;
+}
+.infobulle .text{
+color:#FFFFFF;
+font-family: Verdana;
+font-size:11px;
+font-weight:bold;
+line-height:25px;
+padding:4px 20px;
+text-shadow:0 -1px 0 #000000;
+white-space: nowrap;
+margin-top: -17px;
+}
+.infobulle.drive .text{
+background-image: url(images/drive.png) no-repeat 2px center;
+padding:4px 20px 4px 36px;
+}
+.arrow{
+position: absolute;
+left: 45px;
+height: 0pt;
+width: 0pt;
+margin-left: 0pt;
+border-width: 10px 10px 0pt 0pt;
+border-color: #2C2C2C transparent transparent;
+border-style: solid;
+}
+</style>
+
+  </head>
+    
+  <body>
+    <h3 align="center">基于Gmap3地图插件实现集群功能应用</h3>
+    <div id="googleMap"></div>
+    <script type="text/javascript">
+    $(function () {
+    $('#googleMap')
+      .gmap3({
+        center: [46.578498,2.457275],
+        zoom: 7
+      })
+      .cluster({
+          size: 100,
+          markers: macDoList,  //麦当劳地图文件
+          cb: function (markers) {
+            if (markers.length > 1) { // 1 marker stay unchanged (because cb returns nothing)
+              if (markers.length < 20) {
+                return {
+                  content: "<div class='cluster cluster-1'>" + markers.length + "</div>",
+                  x: -26,
+                  y: -26
+                };
+              }
+              if (markers.length < 50) {
+                return {
+                  content: "<div class='cluster cluster-2'>" + markers.length + "</div>",
+                  x: -26,
+                  y: -26
+                };
+              }
+              return {
+                content: "<div class='cluster cluster-3'>" + markers.length + "</div>",
+                  x: -26,
+                  y: -26
+              };
+            }
+          }
+
+      })
+	  ;
+	  
+  });
+     </script>  
+  </body>
+</html>

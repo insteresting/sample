@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family:宋体;
+	font-size:14px;
+	color:#a4ac2d;
+	background-image:url(../images/5401.jpg);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+}
+html,body {
+	height:100%;
+}
+#box {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+#content{
+	width:900px;
+	height:100%;
+	overflow:hidden;
+	margin:0px auto;
+}
+#top{
+	width:700px;
+	height:128px;
+	line-height:128px;
+	font-weight:bold;
+	background-image:url(../images/5402.png);
+	background-repeat:no-repeat;
+	padding-left:200px;
+}
+#top span{
+	margin-left:15px;
+	margin-right:15px;
+}
+#main{
+	width:900px;
+	height:300px;
+	margin-top:50px;
+	text-align:center;
+	line-height:30px;
+	color:#FFF;
+}
+#pic01{
+	float:left;
+	width:234px;
+	height:285px;
+	background-color:#FFF;
+	margin: 0px 20px 0px 20px;
+	padding:15px 13px 0px 13px;
+	background-color:#a4ac2d;
+	border-radius:15px;
+}
+#pic02{
+	float:left;
+	width:234px;
+	height:285px;
+	background-color:#FFF;
+	margin: 0px 20px 0px 20px;
+	padding:15px 13px 0px 13px;
+	background-color:#a4ac2d;
+	border-radius:15px 0px 15px 0px;
+}
+#pic03{
+	float:left;
+	width:234px;
+	height:285px;
+	background-color:#FFF;
+	margin: 0px 20px 0px 20px;
+	padding:15px 13px 0px 13px;
+	background-color:#a4ac2d;
+	border-radius:0px 15px 0px 15px;
+}

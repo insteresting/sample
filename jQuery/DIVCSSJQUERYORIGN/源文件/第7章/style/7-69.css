@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family:宋体;
+	font-size:12px;
+	color:#444444;
+	line-height:30px;
+	background-image:url(../images/6901.jpg);
+	background-repeat:repeat-x;
+}
+#box{
+	width:670px;
+	height:250px;
+	background-image:url(../images/6902.jpg);
+	background-repeat:no-repeat;
+	margin:55px auto;
+	padding:20px;
+}
+.font{
+	font-weight:bold;
+	line-height:35px;
+	color:#78ac20;
+}
+#text{
+	width:670px;
+	height:105px;
+}
+.font01{
+	font-weight:bold;
+	color:#333333;
+}
+#search01,#search02{
+	width:500px;
+	height:22px;
+	margin:3px 5px;
+}
+#button{
+	float:right;
+	margin-right:30px;
+	margin-top:4px;
+	margin-bottom:4px;
+}
+#text01{
+	width:670px;
+	height:90px;
+	padding-top:15px;
+}
+#text01 li{
+	list-style:none;
+	background-image:url(../images/6904.jpg);
+	background-repeat:no-repeat;
+	background-position:left center;
+	padding-left:15px;
+}
+.bg{
+	background-color:#e8f5ce;
+}

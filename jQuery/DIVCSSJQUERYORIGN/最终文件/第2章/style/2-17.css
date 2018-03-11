@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 12px;
+	background-color: #48BEDC;
+	background-image: url(../images/1701.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#box {
+	width: 700px;
+	height: auto;
+	overflow: hidden;
+	margin: 0px auto;
+	padding-top: 40px;
+}
+#logo {
+	width: 301px;
+	height: 52px;
+	margin: 0px auto;
+}
+#text {
+	width: 400px;
+	height: auto;
+	overflow: hidden;
+	margin-top: 120px;
+	color: #194959;
+	line-height: 25px;
+}
+.font01 {
+	font-family: 微软雅黑;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 40px;
+}

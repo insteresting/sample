@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: 宋体;
+	font-size: 12px;
+	color: #333;
+	line-height: 30px;
+	background-color: #EE7C26;
+	background-image: url(../images/7001.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#login {
+	width: 365px;
+	height: 95px;
+	padding-top: 237px;
+	padding-left: 60px;
+	margin: 0px auto;
+}
+#uname,#upass {
+	width: 180px;
+	height: 18px;
+}
+#yanzheng {
+	width: 100px;
+	height: 18px;
+}
+#button {
+	float: right;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+.border01 {
+	border: solid 1px #CC6600;
+}

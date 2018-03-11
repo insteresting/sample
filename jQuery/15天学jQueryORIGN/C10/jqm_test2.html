@@ -1,0 +1,25 @@
+﻿<!DOCTYPE HTML>			<!—声明HTML 5-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>测试设备的分辨率</title>
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css" />
+<script src="jquery.js"></script>
+<script src="jquery.mobile-1.4.5.js"></script> 
+<script type="text/javascript">
+function show()
+{
+	$width=$(window).width();						//获取屏幕宽度
+	$height=$(window).height();					//获取屏幕高度
+	$out="页面的宽度是："+$width+"页面的高度是："+$height;
+	alert($out);								//使用对话框输出屏幕的高度和宽度
+}
+</script>
+</head>
+<body>
+	<!—调用方法show()显示页面尺寸-->
+	<div style="width:100%; height:100%; margin:0px;" onclick="show();">
+		<h1>单击屏幕即可显示设备的分辨率！</h1>
+    </div>
+</body>
+</html>

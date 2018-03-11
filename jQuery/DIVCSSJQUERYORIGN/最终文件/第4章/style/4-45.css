@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+body{
+	font-family: 宋体;
+	font-size:12px;
+	color:#999;
+	background-image:url(../images/4501.jpg);
+	background-repeat:repeat;
+}
+#box{
+	width:960px;
+	height:100%;
+	overflow:hidden;
+	margin:0px auto;
+}
+#top{
+	width:960px;
+	height:90px;
+}
+#text{
+	width:670px;
+	height:30px;
+	line-height:15px;
+	padding-top:15px;
+	padding-left:126px;
+	padding-right:174px;
+	padding-bottom:15px;
+	margin-bottom:20px;
+	border-top:#333 solid 1px;
+	border-bottom:#333 solid 1px;
+}
+#bg{
+	width:960px;
+	height:480px;
+	margin-bottom:20px;
+	background-image:url(../images/4503.jpg);
+	background-repeat:no-repeat;
+	background-size:80% 350px;
+}

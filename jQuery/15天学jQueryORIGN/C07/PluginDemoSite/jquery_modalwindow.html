@@ -1,0 +1,35 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>弹出窗口插件使用示例</title>
+<style type="text/css">
+   body,input{
+	   font-size:9pt;
+   }
+   #test{
+	   font-size:9pt;	   
+	   width:500px;
+	   height:50px;
+   }
+</style>
+<!--首先添加对jQuery库的引用-->
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<!--然后添加对jQuery插件modalwindow文件的引用-->
+<script type="text/javascript" src="CustomPlugin/jquery.modalwindow.js"></script>
+<script type="text/javascript">
+   //在页面加载时，为按钮关联事件处理代码
+   $(document).ready(function(e) {
+	   //应用自定义的modalwindow插件
+	   $("#modalwindow").click(function(e) {
+        $.modalwindow({url:"http://www.ibm.com"});
+    });
+});
+</script>
+</head>
+
+<body>
+<div id="test">这个示例演示了自定义类级别的插件的使用方法</div>
+<input type="button" name="getdata" id="modalwindow" value="单击弹出窗口">
+</body>
+</html>

@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family:宋体;
+	font-size:12px;
+}
+#box{
+	width:722px;
+	height:422px;
+	background-image:url(../images/2101.png);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	margin:30px auto 0px;
+}
+#menu{
+	width:690px;
+	height:45px;
+	text-align:right;
+}
+#main{
+	width:722px;
+	height:377px;
+}
+#left{
+	float:left;
+	width:128px;
+	height:317px;
+	margin-left:30px;
+	background-image:url(../images/2105.png);
+	background-repeat:no-repeat;
+	background-position:center 10px;
+	padding-top:60px;
+}
+#pic,#pic01,#pic02{
+	width:78px;
+	height:80px;
+	line-height:30px;
+	text-align:center;
+	margin:0px auto;
+	background-image:url(../images/2106.png);
+	background-repeat:no-repeat;
+	padding:4px;
+}
+#right{
+	float:left;
+	width:515px;
+	height:333px;
+	margin-top:11px;
+	margin-left:17px;
+}
+.font01{
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: #FFF;
+}
+.font02 {
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: #FF0;
+}

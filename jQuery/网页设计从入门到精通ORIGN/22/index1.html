@@ -1,0 +1,59 @@
+<!doctype html>
+<html xmlns:spry="http://ns.adobe.com/spry">
+<head>
+<title>电子相册</title>
+<meta charset="gb2312">
+<link rel="stylesheet" type="text/css" href="images/style0.css">
+<link rel="stylesheet" type="text/css" href="images/colour_pink.css">
+<style type="text/css">
+body,td,th { font-size: 0.75em; }
+</style>
+<script language="javascript" type="text/javascript" src="images/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="images/javascript0.js"></script>
+<script src="SpryAssets/xpath.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryData.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+var ds1 = new Spry.Data.XMLDataSet("pics/class.xml", "pics/folder");
+var ds2 = new Spry.Data.XMLDataSet("pics/1/pics.xml", "pics/folder/file");
+//-->
+</script>
+</head>
+<body>
+<div id="wrap">
+    <div id="logo">
+        <h1>电子相册</h1>
+        <h2 id="links">联系主人<a href="#">Email</a><br>
+            访问主人<a href="#">Blog</a></h2>
+    </div>
+    <div id="nav">
+        <ul>
+            <li><a class="selected" href="#">首页</a></li>
+            <li><a href="#">主人简历</a></li>
+            <li><a href="#">客人留言</a></li>
+        </ul>
+        <div id="colours">
+            <a href="#"><img src="images/pink.png" alt="粉红色皮肤"></a> 
+            <a href="#"><img src="images/blue.png" alt="蓝色皮肤"></a> 
+            <a href="#"><img src="images/green.png" alt="绿色皮肤"></a> 
+            <a href="#"><img src="images/purple.png" alt="紫色皮肤"></a> 
+            <a href="#"><img src="images/orange.png" alt="橙色皮肤"></a>       
+        </div>
+    </div>
+    <div id="main">
+        <div id="side_menu" spry:region="ds1">
+            <div spry:repeat="ds1"><a href="#"><img src="pics/{@name}/{@class}" alt="{folder}"></a><span>{folder}</span></div>
+        </div>
+        <div id="content">
+            <h3><span class="title">相册1</span><span class="sub">[鼠标移过缩微图可以放大浏览]</span></h3>
+            <div id="gallery">
+                <span id="thumbs" spry:region="ds2">
+                <span spry:repeat="ds2">
+            <a href="#"><img src="pics/1/t{ds2::file}" title="{ds2::file}" alt="{ds2::file}"></a>                </span>
+            </span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

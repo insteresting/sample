@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body {
+	background-image: url(../images/10901.jpg);
+	background-repeat: no-repeat;
+	background-position: center -500px;
+	color: #FFF;
+}
+.bannerbox {
+	width: 965px;
+	height: 360px;
+	overflow: hidden;
+	margin: 20px auto;
+}
+#focus {
+	width: 965px;
+	height: 360px;
+	overflow: hidden;
+	position: relative;
+}
+#focus ul {
+	width: 965px;
+	height: 360px;
+	position: absolute;
+}
+#focus li {
+	float: left;
+	width: 965px;
+	height: 360px;
+	overflow: hidden;
+	position: relative;
+}
+#focus .preNext {
+	width: 482px;
+	height: 360px;
+	position: absolute;
+	top: 0px;
+	cursor: pointer;
+}
+#focus .pre {
+	left: 0;
+	background-image: url(../images/10906.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+#focus .next {
+	right: 0;
+	background-image: url(../images/10907.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+

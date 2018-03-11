@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family:宋体;
+	font-size:12px;
+	color: #F90;
+	line-height:25px;
+}
+#box{
+	width:780px;
+	height:429px;
+	margin:0px auto;
+	background-image:url(../images/2901.png);
+	background-repeat:no-repeat;
+	padding-top:60px;
+	padding-left:58px;
+	padding-right:58px;
+}
+#pic{
+	float: left;
+	width: 240px;
+	height: auto;
+	border: solid 1px #CCC;
+	background-color: #FFF;
+	margin-left: 9px;
+	margin-right: 9px;
+}
+#pic01{
+	float: left;
+	width: 240px;
+	height: auto;
+	border: solid 1px #CCC;
+	background-color: #FFF;
+	margin-left: 9px;
+	margin-right: 9px;
+}
+#pic02{
+	float: left;
+	width: 240px;
+	height: auto;
+	border: solid 1px #CCC;
+	background-color: #FFF;
+	margin-left: 9px;
+	margin-right: 9px;
+}

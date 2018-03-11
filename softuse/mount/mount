@@ -1,0 +1,14 @@
+#DO NOT MODIFY /ETC/VSFTAB FILE, IT IS CRAZY!
+sudo umount /dev/sdc4
+sudo umount /dev/sda1
+sudo mount /dev/sdc4 /samba -t ext4
+sudo mount /dev/sda1 /var/www/html -t ext4
+sudo chmod 777 /samba
+sudo chmod 777 /var/www/html
+#sleep 600
+#sleep 10
+#screen -S nat123
+cd /opt/nat123linux
+mono nat123linux.sh autologin lganame keps091794 
+#screen -d nat123
+

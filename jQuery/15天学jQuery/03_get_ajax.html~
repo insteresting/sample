@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>$.get()</title>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+      function sendAjax() {
+      $.get("data.txt",function(data){//指定url和回调函数
+      alert(data);//展示返回结果
+      }，"text");
+      }
+    </script>
+  </head>
+  <body style="text-align:center">
+    <input type="button" value="获取数据" onclick="sendAjax();"/>
+  </body>
+</html>

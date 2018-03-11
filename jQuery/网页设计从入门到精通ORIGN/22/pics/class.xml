@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pics url="pics">
+    <folder name="1" class="class.jpg">热带风情</folder>
+    <folder name="2" class="class.jpg">高山风光</folder>
+    <folder name="3" class="class.jpg">异国风情</folder>
+    <folder name="4" class="class.jpg">冬日风光</folder>
+    <folder name="5" class="class.jpg">野外风景</folder>
+    <folder name="6" class="class.jpg">花儿灿烂</folder>
+    <folder name="7" class="class.jpg">充实的乡村</folder>
+	<folder name="8" class="class.jpg">天高云淡</folder> 
+</pics>

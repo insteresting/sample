@@ -1,0 +1,4 @@
+#apt-key adv --keyserver hkp://keys.gnupg.net --recv-keys 7D8D0BF6
+apt update
+apt -y install emacs vim tmux screen git lynx ibus ibus-table-wubi ibus-pinyin xchm samba samba-common-bin idle-python2.7 idle-python3.5 ipython
+apt autoremove

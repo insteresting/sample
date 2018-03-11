@@ -1,0 +1,105 @@
+ipse安装后需要进行的配置
+
+
+在MyEclipse中编写Web Project，有2个地方需要改编码设置：
+
+1.window-->preference-->general-->content type
+
+然后在<Content Types>中展开每一个子项,并在<Default encoding>中输入"UTF-8 "或"GB18030 ", 点update!
+
+2.window-->preference-->MyEclipse-->Files and Editors
+
+将每个子项的"Encoding"改为"ISO 10645/Unicode(UTF-8) "或"Chinese,National Standard ",点Apply!
+
+以后所有创建的文档类型都是UTF-8或GB18030格式!
+
+改变Eclipse 或者MyEclipse 新建文件的默认编码
+
+eclipse 的：
+window-preferences-General-ContentType 的右边窗口，改成gbk 也可以，utf-8 也行。
+
+myEclipse 的: 
+window-preferences-myEclipse-files and editors-jsp 里面有 encoding ，改这里为ISO10646/UTF-8.
+
+eclipse 和java 文件编码设定    
+
+    如果在网上搜索 文件编码问题，您可以得到很多的解答，甚至有的是号称终极解决方案，所以您可能不会遇到编码问题了，那么为什么我还要写这篇文章呢？因为我在两个平台下面工作，默认的编码是不一样的，所以需要跳整一下才行。
+
+    看看eclipse 的设定吧，如果你下载了eclipse ，什么都不做，就开始创建工程，编码，一切都没有问题，可是你可能将你的工程移动到linux 下面开发了，原因就是你开始厌倦winxp 了，爱上了ubuntu 。这个时候问题就来了。打开你在winxp 下面的eclipse ，点击Window-->Preferences ，展开 General-->WorkSpace ，看到左边的 Text file encoding 没有，默认的设定是简体中文编码（gbk ，gb2312 这样），而linux 下面呢，是UTF-8 。
+
+   现在大家已经了解它们的区别了，还等什么，现在开始将你所有WorkSpace 的文件编码都设定成UTF-8 吧，你将拥有在任何时候都能正常显示的java 文件，没有乱码。
+
+MyEclipse安装后一定要做的事－如改变默认编码项目编码。但是你会说，以前的项目已经是其他编码，你已经不想修改了，只想从现在开始拥抱 UTF-8 ，这也是可以的，当你新建一个项目，希望使用和WorkSpace 不同编码，请右击你的项目，选择 Properties ，点击 Resource ，看到 Text file encoding 了吧，点击Other ，选择UTF-8 ， 你非常需要这样的编码格式，不是吗？
+
+JSP 编码
+
+    这样就完了吗？没有，可能jsp 才是你打交道最多的文件，你不是也希望所有的jsp 文件都是UTF-8 吗？那就接着看吧。还是点击Window-->Preferences ，这一次是展开 Web and XML-->JSP Files ，看到 Encoding 了吧，赶快选择 UTF-8 吧。如果可以，将你的HTML，CSS 等等这些文件的设定都弄成UTF-8 吧，你将会拥有完整的UTF-8 的解决方案。
+最后看看你设定之后的效果吧。新建一个JSP 文件，在第二步选择任意一个jsp 的模板。然后看看生成的jsp 文件吧，全部都是UTF-8了，现在你可以放心了，你的文件都是UTF-8 的了。
+
+01 Struts2 国际化乱码问题解决
+
+开发工具：MyEclipse 6.01 ，所有的文件编码都设置为utf-8 。所有过程正常开发结束后。将messagesource.propertis 本地化：
+native2ascii messagesource.propertis messagesource_zh_CN.propertis 
+运行，发现页面上从资源文件中读取的内容仍然为乱码。 
+解决方法：本地化时指定编码方式即可，如下：
+native2ascii -encoding UTF-8 messagesource.propertis messagesource_zh_CN.propertis
+
+02 取消myeclipse quick install 对话框
+
+   我用的是myeclipse6.0 今天打开的时候出现myeclipse quick install 对话框，这个对话框是做什么的？怎么才能取消？哪位知道啊，指点一下
+
+   首先你把 那个myeclipse quick install 对话框 的勾勾去掉 
+再把Windows > Preferences > Install/Update > Automatic Updates and uncheck Automatically Find New Updates and Notify Me 的勾勾去掉。 
+这样就好了。
+
+03 增强Eclipse ，MyEclipse 的代码自动提示功能
+
+一 般默认情况下，Eclipse ，MyEclipse 的代码提示功能是比Microsoft Visual Studio的差很多的，主要是Eclipse ，MyEclipse本身有很多选项是默认关闭的，要开发者自己去手动配置。如果开发者不清楚的话，就不知道Eclipse ，MyEclipse的代码提示功能一样能像Microsoft Visual Studio的代码提 示功能一样强大。 
+先 举个简单的例子说明问题所在，例如在Eclipse ，MyEclipse代码里面，打个foreach，switch等 这些，是无法得到代码提示的（不信自己试试），其他的就更不用说了，而在Microsoft Visual Studio 里面是得到非常友好的代码提示的。实际上，Eclipse ，MyEclipse代码里面的代码提示功能默认的一般 是点“.”，一般是有了点“.”，才会有代码提示。 
+原理：“Auto Activation triggers for java”这个选项就是指触发代码提示的的选项，把“.” 改成“.abcdefghijklmnopqrstuvwxyz(,”的意思，就是指遇到26个字母和.，（这些符号就触发代码提 示功能了。（具体后面有说，放心） 
+增强Eclipse ，MyEclipse 的代码提示功能，具体怎么样来配置？ 
+下面开始说步骤（注意本人用的 MyEclipse 6.0.1做讲解）：
+
+1. 打开MyEclipse 6.0.1，然后 “window”→“Preferences” 
+2. 选择“java”，展开，“Editor”，选择“Content Assist”。 
+3. 选择“Content Assist”，然后看到右边，右边的“Auto-Activation”下面的“Auto Activation triggers for java”这个选项。其实就是指触发代码提示的就是“.”这个符号。 
+4. “Auto Activation triggers for java”这个选项，在“.”后加abc字母，方便后面的查找 修改。然后“apply”，点击“OK”。 
+5. 然后，“File”→“Export”，在弹出的窗口中选择“Perferences”，点击“下一步”。 
+6. 选择导出文件路径，本人导出到桌面，输入“test”作为文件名，点击“保存”。 
+7. 在桌面找到刚在保存的文件“test.epf”,右键选择“用记事本打开”。 
+8. 可以看到很多配置MyEclipse 6.0.1的信息 
+9. 按“ctrl + F”快捷键，输入“.abc”，点击“查找下一个”。 
+10. 查找到“.abc”的配置信息 . 
+11. 把“.abc”改成“.abcdefghijklmnopqrstuvwxyz(,”，保存，关闭“test.epf”。 
+12. 回到MyEclipse 6.0.1界面，“File”→“Import”，在弹出的窗口中选择“Perferences”，点击 “下一步”，选择刚在已经修改的“test.epf”文件，点击“打开”，点击“Finish”。该步骤和上面的导出步骤类似。 
+13. 最后当然是进行代码测试了。 
+随便新建一个工程，新建一个类。在代码输入switch，foreach等进行测试。你立即会发现，果然出了提示，而且无论是敲哪个字母都会有很多相关的提示了，很流畅，很方便。 
+总结：“Auto Activation triggers for java”这个选项就是指触发代码提示的的选项，把“.”改成 “.abcdefghijklmnopqrstuvwxyz(,”的意思，就是指遇到26个字母和.，（这些符号就触发代码提示功 能了。 
+顺便说一下，修改类名，接口名等以不同颜色高亮的，可以这样配置在“java”→“enditor”→ “syntac ”，右边展开“java”→“classes”，勾上“Enable”这个选项，选择自己喜欢的颜色即可。 
+当然还有其他相关的颜色配置。具体就不说啦。其实，在“Preferences”这个东西，有很多可以配置的东西，使得MyEclipse 优化的，具体的就要各个人根据自己个人喜好去配置了。 
+
+04 如何在MyEclipse 添加javadoc(SUN 源代码)
+
+按住CTRL,点击一方法时出现：
+The jar file rt.jar has no source attachment.
+You can attach the source by cliking Attack Source below:
+
+解决方法：
+因为rt的source在jdk目录的src.zip文件里，所以找到jdk目录下的src.zip就行了。
+一般MyEclipse没有src.zip.
+你要用到JDK安装包的路径，比如你的JDK安装路径：C:\Program Files\Java\jdk1.5.0_15
+那就选择;C:\Program Files\Java\jdk1.5.0_15\src.zip 即可
+
+05 在用MyEclipse 建JSP 页面的时候自动生成的一些代码是什么意思？
+
+在用MyEclipse建JSP页面的时候自动生成的一些代码是什么意思？ 
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+以上这两段代码是干什么用的啊？什么意思 
+还有pageEncoding="ISO-8859-1" 和 charset="GBK" 有什么区别？ 
+上面的2段代码是得到JSP 文件的URL的，
+pageEncoding 是指你JSP 文件的保存编码 ，就是说你JSP文件以什么编码保存在硬盘上的
+charset="GBK" 是你JSP 输入输出的编码 ，很多服务器在没有找到pageEncoding时，有charset代替pageEncoding
+

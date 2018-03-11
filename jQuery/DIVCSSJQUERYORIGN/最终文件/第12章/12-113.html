@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery UI Tabs组件——制作选项卡式新闻列表</title>
+<link href="style/12-113.css" rel="stylesheet" type="text/css" />
+<link href="../jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="../jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="../jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="../jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="../jQueryAssets/jquery-ui-1.9.2.tabs.custom.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="box">
+  <div id="main">
+    <div id="Tabs1">
+      <ul>
+        <li><a href="#tabs-1">综　合</a></li>
+        <li><a href="#tabs-2">新　闻</a></li>
+        <li><a href="#tabs-3">公　告</a></li>
+      </ul>
+      <div id="tabs-1">
+        <div id="title1">浓情中秋，中秋送祝福活动晚会在9月30日举行</div>
+        <div id="text1">
+          <dl>
+            <dt>[公告]今晚9点，9周年庆隆重开幕，经验钞票双倍拿！</dt><dd>09/28</dd>
+            <dt>[公告]紧急寻找令——寻找夜店潮人 赢取双人豪华旅游大奖</dt><dd>07/06</dd>
+            <dt>[新闻]夜店之王回馈黄钻用户，礼包、特权惊喜不断</dt><dd>07/01</dd>
+            <dt>[新闻]玩夜店之王，免费带你游丽江</dt><dd>06/23</dd>
+            <dt>[新闻]潮人选秀最终三甲独家专访大爆料</dt><dd>05/14</dd>
+            <dt>[公告]红钻贵族礼包登场，带你品味夜店诱惑</dt><dd>03/28</dd>
+            <dt>[公告]新手必备：好友不够多？送你高级雇佣卡！</dt><dd>03/02</dd>
+            <dt>[新闻]情人节新款装扮上线，看看谁是你的最佳情人...</dt><dd>02/14</dd>
+          </dl>
+        </div>
+      </div>
+      <div id="tabs-2">
+        <div id="title2">潮人选秀最终三甲独家专访大爆料</div>
+        <div id="text2">
+          <dl>
+            <dt>[新闻]你的名字你做主，邀您评选粉丝专用名</dt><dd>09/28</dd>
+            <dt>[新闻]夜店之王大型语音活动7月开启</dt><dd>07/06</dd>
+            <dt>[新闻]情人节新款装扮上线，看看谁是你的最佳情人...</dt><dd>07/01</dd>
+            <dt>[新闻]红钻贵族礼包登场，带你品味夜店诱惑</dt><dd>06/23</dd>
+            <dt>[新闻]夜店之王全面优化，新增点券充值功能</dt><dd>05/14</dd>
+            <dt>[新闻]玩夜店之王，免费带你游丽江</dt><dd>03/28</dd>
+            <dt>[新闻]潮人选秀最终三甲独家专访大爆料</dt><dd>03/02</dd>
+            <dt>[新闻]夜店之王回馈黄钻用户，礼包、特权惊喜不断</dt><dd>02/14</dd>
+          </dl>
+        </div>
+      </div>
+      <div id="tabs-3">
+        <div id="title3">玩夜店之王，免费带你游丽江</div>
+        <div id="text3">
+          <dl>
+            <dt>[公告]关于个人信息显示不正常的公告</dt><dd>09/28</dd>
+            <dt>[公告]潮人选秀活动获奖公告</dt><dd>07/06</dd>
+            <dt>[公告]关于部分玩家数据异常的补偿公告</dt><dd>07/01</dd>
+            <dt>[公告]7月15日（周三）全部停机更新公告</dt><dd>06/23</dd>
+            <dt>[公告]潮人选秀最终三甲独家专访大爆料</dt><dd>05/14</dd>
+            <dt>[公告]回馈黄钻用户，礼包、特权惊喜不断</dt><dd>03/28</dd>
+            <dt>[公告]夜店之王全面优化，新增点券充值功能</dt><dd>03/02</dd>
+            <dt>[公告]玩夜店之王，免费带你游丽江</dt><dd>02/14</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="bottom"></div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>

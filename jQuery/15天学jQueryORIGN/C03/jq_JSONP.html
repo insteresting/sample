@@ -1,0 +1,19 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>jQuery的JSONP调用</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<script type="text/javascript" src="../jquery-3.1.1.js"></script>
+		<script type="text/javascript">
+			var showAge = function(data){
+				alert("Name:" + data.name + ", Age:" + data.age);  //展示信息数据
+			};
+			$(document).ready(function(){
+				var url = 'info.js';		//一个外部域名或IP的资源地址				
+				$.getJSON(url + "?callbak=?", showAge); 
+			});
+		</script>  
+	</head>
+	<body style="text-align:center">	
+	</body>
+</html>

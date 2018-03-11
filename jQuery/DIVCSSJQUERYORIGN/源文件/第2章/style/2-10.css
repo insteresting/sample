@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body {
+	font-size: 12px;
+	color: #333;
+	line-height: 25px;
+	background-color: #F0ECEB;
+	background-image: url(../images/1001.png);
+	background-repeat: repeat-x;
+}
+#top {
+	width: 960px;
+	height: 160px;
+	margin: 0px auto;
+	padding-top: 31px;
+}
+#logo {
+	width: 123px;
+	height: 113px;
+	float: left;
+}
+#menu {
+	width: 510px;
+	height: 37px;
+	float: left;
+	margin-left: 327px;
+	margin-top: 40px;
+}
+#menu img {
+	margin-right: 7px;
+}
+

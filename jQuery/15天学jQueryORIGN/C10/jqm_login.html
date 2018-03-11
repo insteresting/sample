@@ -1,0 +1,28 @@
+<!DOCTYPE html>     								<!—声明HTML 5-->
+<html>     
+<head>     
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>简单的QQ登录页面</title>     
+<meta name="viewport" content="width=device-width, initial-scale=1">     
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css" />     
+<script src="jquery.js"></script>     
+<script src="jquery.mobile-1.4.5.js"></script>    
+</head>               
+<body>
+	<div data-role="page">
+		<div data-role="content">
+			<!—此处图片用来引入企鹅LOGO并设置其大小-->
+			<img src="images/qq.jpg" style="width:50%; margin-left:25%;"/>
+			<!—表单元素均要被放置在form标签中-->
+			<form action="#" method="post">              		
+				<!—这是一个文本编辑框，使用type=”text”来进行标识-->
+				<input type="text" name="zhanghao" id="zhanghao" value="账号："  />
+
+				<input type="text" name="mima" id="mima" value="密码："  />
+				<!—这是一个按钮-->
+				<a href="#" data-role="button" data-theme="b">登录</a>
+			</form>
+		</div>
+    </div>
+</body>
+</html>

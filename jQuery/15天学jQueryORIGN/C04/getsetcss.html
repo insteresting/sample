@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>css属性</title>
+<!--   引入jQuery -->
+<script src="../jquery-3.1.1.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").css({"background-color": "yellow", "font-size": "200%"});
+    });
+});
+</script>
+<style>
+.blue {
+    color: blue;
+}
+</style>
+</head>
+
+<body>
+<h2>我的故乡</h2>
+<p style="background-color:#ff0000">有条河</p>
+<p style="background-color:#00ff00">有座山</p>
+<p style="background-color:#0000ff">有个寺庙</p>
+
+<p>它真的很美</p>
+
+<button>设置P的属性</button>
+</body>
+</html>

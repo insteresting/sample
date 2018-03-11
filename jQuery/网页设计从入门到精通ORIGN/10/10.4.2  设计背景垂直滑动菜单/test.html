@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>列表布局</title>
+<style type="text/css">
+#menu {
+    background: url(images/bg1.gif) #fff;
+    padding-left: 32px;
+    margin: 0px;
+    list-style-type: none;
+    height:35px;
+}
+#menu li {
+    float: left;
+    margin:0 4px;
+}
+#menu span {
+	float:left;
+    padding-left:18px;
+    background:url(images/menu4.gif) left center repeat-x;    
+}
+#menu li a {
+    padding-right: 18px;
+    float: left;
+    height: 35px;
+    color: #bbb;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    background:url(images/menu4.gif) right center repeat-x;
+}
+#menu a:hover {
+    color: #fff;
+    background:url(images/menu5.gif) right center repeat-x;    
+}
+#menu a:hover span {
+    background:url(images/menu5.gif) left center repeat-x; 
+    cursor:pointer;
+    cursor:hand;
+}
+</style>
+</head>
+<body>
+<h1>滑动门</h1>
+<ul id="menu">
+    <li><a href="#" title=""><span>首页</span></a></li>
+    <li><a href="#" title=""><span>微博圈</span></a></li>
+    <li><a href="#" title=""><span>移动开发</span></a></li>
+    <li><a href="#" title=""><span>编程与设计</span></a></li>
+    <li><a href="#" title=""><span>程序员与语言</span></a></li>
+    <li><a href="#" title=""><span>编程语言排行榜</span></a></li>   
+</ul>
+</body>
+</html>

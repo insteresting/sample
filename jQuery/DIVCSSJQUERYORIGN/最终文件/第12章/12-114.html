@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Blind效果——动态显示隐藏网页元素</title>
+<link href="style/12-114.css" rel="stylesheet" type="text/css">
+<script src="../jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="../jQueryAssets/jquery-ui-effects.custom.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_DW_effectBlind(obj,method,effect,dir,speed)
+{
+    obj[method](effect, { direction: dir}, speed);
+}
+</script>
+</head>
+
+<body>
+<div id="box">
+  <div id="logo"><img src="images/11404.png" width="766" height="433"  alt=""/></div>
+  <div id="right"><img src="images/11405.png" width="174" height="373"  alt=""/></div>
+  <div id="pic"><img src="images/11406.jpg" width="89" height="61"  alt=""/><img src="images/11407.jpg" width="88" height="61"  alt=""/><img src="images/11408.jpg" width="88" height="61"  alt=""/><img src="images/11409.jpg" width="89" height="61"  alt=""/><img src="images/11406.jpg" width="89" height="61"  alt=""/><img src="images/11407.jpg" width="88" height="61"  alt=""/><img src="images/11408.jpg" width="88" height="61"  alt=""/><img src="images/11409.jpg" width="89" height="61"  alt=""/></div>
+  <img src="images/11403.jpg"  alt="" width="942" height="627" onMouseOver="MM_DW_effectBlind($('#pic'),'hide','blind','horizontal',1000)" onMouseOut="MM_DW_effectBlind($('#pic'),'show','blind','up',1000)"/>
+</div>
+</body>
+</html>

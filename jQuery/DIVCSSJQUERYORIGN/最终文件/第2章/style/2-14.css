@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-color: #000;
+	background-image: url(../images/1404.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#box-out {
+	width: 670px;
+	height: 100%;
+	overflow: hidden;
+	border: solid 1px #CECECE;
+	background-color: #FFF;
+	padding: 1px;
+	margin: 30px auto 0px auto;
+}
+#box {
+	height: 100%;
+	overflow: hidden;
+	background-color: #F6F6F6;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#box img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 5px solid #69F;
+}
+

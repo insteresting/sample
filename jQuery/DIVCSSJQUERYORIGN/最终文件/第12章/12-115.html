@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Bounce效果——实现网页元素动态抖动显示隐藏</title>
+<link href="style/12-115.css" rel="stylesheet" type="text/css">
+<script src="../jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="../jQueryAssets/jquery-ui-effects.custom.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_DW_effectBounce(obj,method,effect,direction,distance,mode,times,speed)
+{
+    obj[method](effect, { direction:direction,distance:distance,mode:mode,times:times}, speed);
+}
+</script>
+</head>
+
+<body>
+<div id="box">
+  <div id="top">
+    <div id="logo"><img src="images/11502.png" width="330" height="70"  alt=""/></div>
+    <div id="menu">
+      <ul>
+        <li>网站首页</li>
+        <li>关于我们</li>
+        <li>精美菜单</li>
+        <li>特色菜品</li>
+        <li>联系我们</li>
+      </ul>
+    </div>
+  </div>
+  <div id="main">
+    <div id="pic1"><img src="images/11503.jpg"  alt="" width="330" height="330" onMouseOver="MM_DW_effectBounce($('#text1'),'effect','bounce','down',50,'hide',10,1000)" onMouseOut="MM_DW_effectBounce($('#text1'),'effect','bounce','down',50,'show',10,1000)"/>
+      <div id="text1"><span class="font01">中式糖醋排骨</span><br>
+      中式传统美味、家常菜品，广受欢迎</div>
+    </div>
+    <div id="pic2"><img src="images/11504.jpg"  alt="" width="330" height="330" onMouseOver="MM_DW_effectBounce($('#text2'),'effect','bounce','down',50,'hide',10,1000)" onMouseOut="MM_DW_effectBounce($('#text2'),'effect','bounce','down',50,'show',10,1000)"/>
+      <div id="text2"><span class="font01">意大利pizza</span><br>
+      美味的意大利pizza，香脆可口，丰富馅料</div>
+    </div>
+    <div id="pic3"><img src="images/11505.jpg"  alt="" width="330" height="330" onMouseOver="MM_DW_effectBounce($('#text3'),'effect','bounce','down',50,'hide',10,1000)" onMouseOut="MM_DW_effectBounce($('#text3'),'effect','bounce','down',50,'show',10,1000)"/>
+      <div id="text3"><span class="font01">日式美味寿司</span><br>
+      传统的日式风味，日本大厨亲自料理</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+/*学生信息文本显示的字体名称，字体大小，背景图像*/
+xueshengxinxi {
+	display: block;
+	width: 384px;
+	height: 356px;
+	background-image: url(../images/10501.gif);
+	background-repeat: no-repeat;
+	font-family: 宋体;
+	font-size: 12px;
+	color: #645C54;
+	line-height: 25px;
+	margin: 10px auto;
+}
+/*班级名称单独一行*/
+banji-title {
+	display: block;
+	width: 364px;
+	height: 37px;
+	background-image: url(../images/10502.gif);
+	background-repeat: no-repeat;
+	color: #036;
+	font-weight: bold;
+	line-height: 37px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-left: 10px;
+}
+/*学生信息列表显示，为每条课程信息前添加小图标*/
+xuesheng-list {
+	display: block;
+	background-image: url(../images/10503.gif);
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	padding-left: 30px;
+	line-height: 22px;
+}
+
+
+
+
+

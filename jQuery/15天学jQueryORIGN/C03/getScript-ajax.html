@@ -1,0 +1,16 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>$.getScript()</title>
+<script type="text/javascript" src="../jquery-3.1.1.js"></script>
+<script type="text/javascript">			
+	function sendAjax(){
+	$.getScript("json.js");		//调取js文件并执行
+	}
+</script>
+</head>
+<body style="text-align:center">	
+	<input type="button" value="获取JavaScript代码" onclick="sendAjax()"/>
+</body>
+</html>

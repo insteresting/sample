@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: #333;
+	line-height: 30px;
+	background-image: url(../images/11501.png);
+	background-repeat: repeat-x;
+}
+#box {
+	width: 990px;
+	height: auto;
+	overflow: hidden;
+	margin: 0px auto;
+}
+#top {
+	height: 92px;
+	padding-top: 20px;
+}
+#logo {
+	width: 330px;
+	height: 70px;
+	float: left;
+}
+#menu {
+	width: 500px;
+	height: 30px;
+	padding-top: 40px;
+	float: left;
+	margin-left: 160px;
+}
+#menu li {
+	list-style-type: none;
+	width: 100px;
+	text-align: center;
+	float: left;
+	font-weight: bold;
+	color: #999;
+}
+#main {
+	position: absolute;
+	width: 990px;
+	height: 340px;
+	left: 50%;
+	margin-left: -495px;
+}
+#pic1 {
+	position: absolute;
+	width: 330px;
+	height: 330px;
+	background-color: #C6404B;
+	padding-top: 10px;
+}
+#text1 {
+	width: 100%;
+	height: 60px;
+	color: #F36E82;
+	background-color: #C6404B;
+	position: absolute;
+	text-align: center;
+	bottom: 0px;
+}
+.font01 {
+	font-size: 20px;
+	color: #FFF;
+}
+#pic2 {
+	position: absolute;
+	width: 330px;
+	height: 330px;
+	background-color: #911046;
+	padding-top: 10px;
+	left: 330px;
+}
+#text2 {
+	width: 100%;
+	height: 60px;
+	color: #DC144C;
+	background-color: #911046;
+	position: absolute;
+	text-align: center;
+	bottom: 0px;
+}
+#pic3 {
+	position: absolute;
+	width: 330px;
+	height: 330px;
+	background-color: #35213C;
+	padding-top: 10px;
+	left: 660px;
+}
+#text3 {
+	width: 100%;
+	height: 60px;
+	color: #915EA1;
+	background-color: #35213C;
+	position: absolute;
+	text-align: center;
+	bottom: 0px;
+}

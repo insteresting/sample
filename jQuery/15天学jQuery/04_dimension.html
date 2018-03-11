@@ -1,0 +1,39 @@
+<!DOCTYPE　html>
+<!--
+时间:
+作者:
+功能:
+-->
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script>
+      $(document).ready(function(){
+      $("button").click(function(){
+      var txt="";
+      txt += "div的宽/高:" + $("#div1").width();
+      txt += "x" + $("#div1").height() + "\n";y
+      txt += "文档的宽/高:" + $(document).width();
+      txt += "x" + $(document).height() + "\n";
+      txt += "窗口的宽/高:" + $(window).width();
+      txt += "x" + $(window).height();
+      alert(txt);
+      });
+      });
+
+    </script>
+    <style>
+
+
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <button>高度和宽度</button>
+    
+
+
+  </body>
+  </html>

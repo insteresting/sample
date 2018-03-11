@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body {
+	background-color: #F4F4F4;
+}
+#box {
+	width: 500px;
+	height: 100%;
+	overflow: hidden;
+	margin: 80px auto 0px auto;
+	text-align: center;
+}
+.font01 {
+	font-family: 幼圆;
+}
+.font02 {
+	font-family: "Arial Black","Times New Roman",Arial;
+}
+
+
+

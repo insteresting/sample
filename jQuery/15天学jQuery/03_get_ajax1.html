@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>$.ajax()</title>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+      function sendAjax() {
+      $.ajax({
+      url:"data.txt",
+      dataType:'text',
+      success:function(data, status){
+      alert("结果:"+data);
+      alert("状态:"+status);
+      },
+      error:function(reg,status,error){
+      alert("状态:"+status);
+      alert("错误:"+error);
+      }});
+      }
+    </script>
+  </head>
+  <body style="text-align:center">
+    <input type="button" value="获取数据" onclick("sendAjax();"/>
+  </body>
+  </html>

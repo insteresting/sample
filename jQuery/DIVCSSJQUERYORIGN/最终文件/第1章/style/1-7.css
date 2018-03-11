@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body,html {
+	height: 100%;
+}
+body {
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: #333;
+	line-height: 25px;
+	background-image: url(../images/701.jpg);
+	background-repeat: no-repeat;
+	background-position: -80px center;
+
+}
+#video {
+	width: 427px;
+	height: 268px;
+	background-image: url(../images/702.png);
+	background-repeat: no-repeat;
+	margin: 100px auto 0px auto;
+	padding: 21px 22px 143px 22px;
+	margin-left: 600px;
+}
+
+

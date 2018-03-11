@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+list {
+	font-family: 宋体;
+	font-size: 12px;
+	position: absolute;/*绝对定位*/
+	top: 0px;
+	left: 0px;
+	padding: 10px;
+}
+caption {
+	display: block;/*块元素*/
+	background-color: #993300;
+	background-image:url(../images/10601.gif);
+	background-repeat: no-repeat;
+	background-position: 20px center;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF9999;
+	line-height: 36px;
+	padding-left: 35px;
+}
+title {
+	display: block;/*块元素*/
+	height: 29px;
+	background-color:#DD0000;  /*背景颜色*/
+	border: 1px solid #F30; /*边框*/
+	margin-bottom: -1px;    /*解决边框重叠的问题*/
+	font-weight: bold;
+	color: #FFF;
+	line-height: 29px;
+}
+music {
+	display: block;/*块元素*/
+	height: 25px;
+	background-color:#FFECEC; /*背景颜色*/
+	border: 1px solid #FC9;   /*边框*/
+	margin-bottom: -1px;      /*解决边框重叠的问题*/
+	color: #3F3F3F;
+	line-height: 25px;
+}
+
+lname,level,zjname,lx,number {
+	padding: 0px 10px 0px 10px;
+}
+lname {
+	clear: both;
+	display: block;
+	width: 200px;
+	float: left;
+	border-right: dashed 1px #FC9;
+}
+level {
+	display: block;
+	width: 100px;
+	float: left;
+	border-right: dashed 1px #FC9;
+	text-align: center;
+}
+zjname {
+	display: block;
+	width: 100px;
+	float: left;
+	border-right: dashed 1px #FC9;
+	text-align: center;
+}
+lx {
+	display: block;
+	width: 90px;
+	float: left;
+	border-right: dashed 1px #FC9;
+	text-align: center;
+}
+number {
+	display: block;
+	width: 100px;
+	float: left;
+	text-align: center;
+}

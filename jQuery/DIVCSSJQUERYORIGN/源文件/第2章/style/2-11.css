@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 14px;
+	color: #FFF;
+	line-height: 30px;
+	background-color: #672DA8;
+	background-image:url(../images/1101.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#box {
+	width: 900px;
+	height: 500px;
+	background-image: url(../images/1102.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	margin: 0px auto;
+	padding-top: 100px;
+}
+#text {
+	width: 300px;
+	height: auto;
+	overflow: hidden;
+}
+#text p {
+	text-indent: 28px;
+}

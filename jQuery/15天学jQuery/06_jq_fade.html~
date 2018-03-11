@@ -1,0 +1,7 @@
+ .divFrame{border:solid 1px #666; width:188px; text-align:center;}
+      .divFrame .divTitle{background-color:#eee; padding:5px 0px 5px 0px}
+      .divFrame .divContent{padding:5px 0px 5px 0px}
+      .divFrame .divContent img{border:solid 1px #eee; padding:2px}
+      .divFrame .divTip {position:absolute; padding:90px 0px 60px; font-size:13px;font-weight:bold}
+      .btn {border:#666 1px solid; padding:2px;width:80px;
+      filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ffffff, EndColorStr=#ECE9D8);}

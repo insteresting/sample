@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>我的微博</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){ //加载执行
+      var url = 'weibo.php'; //服务器端地址，往往是动态的
+      //开始定时器
+      window.setInterval(function(){
+      $.get(url, //目标URL
+      functiion(data){ //成功回调函数
+      var json = eval('('+data+')');
+      var title = json['title']; //title数据
+      //content数据
+      var content = json['content'];
+      var time = new Date(); //当前时间
+      var year = time.getYear(); //年度
+      var month = time.getMonth(); //月份
+      var date = time.getDate(); //日
+      var hh = time.getHours(); //时
+      var mm = time.getMinutes(); //分
+      var ss = time.getSeconds(); //秒
+      //拼凑事件格式的字符
+      time = year+'-'+month+'-'+date+''+hh+':'+mm+':'+ss;
+      var str = '<div class="info">' ;//定义数据变量
+	str += '<h3>'+title+'</h3>';//标题
+	str +='<p class="content">' +content+'</p>';//内容
+	str +='<p class="time">发布于：'+time+'</p>;//内容
+	str +='</div>';
+      $(".container").prepend(str); //插入到顶部
+      });
+      },10*1000);
+
+      
+      });
+      
+    </script>
+    <style>
+      .container{
+      width: 300px;
+      margin: 5px auto;
+      padding: 5px;
+      border:1px solid black;
+      }
+      .info{
+      padding:10px;
+      border-bottom: 1px dotted black;
+      font-size: 12px;
+      }
+      .info h3 {
+      text-align:left;
+      font-size:14px;
+      font-weight:600;
+      }
+      .info .content{
+      text-align:left;
+      font-size:12px;
+      }
+      .info .time{
+      text-align:right;
+      pading-right:10px;
+      margin:5px 0 0 0;
+      color:gray;
+      }
+      </style>
+    </head>
+  <body>
+    <div class="container">
+      <div class="info">
+      <h3>这是一条微博</h3>
+      <p class="content">这是一条微博信息，内容是。。。</p>
+      <p class="time"发布于:time</p>
+	 </div>
+</div>
+    </body>
+    </html>

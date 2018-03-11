@@ -1,0 +1,19 @@
+
+/* -----------------------
+HTML tags, reset
+----------------------- */
+.box {height:1%;}
+th, td {padding:5px 7px;}
+
+/* -----------------------
+LAYOUT
+----------------------- */
+
+#search #search-input {height:28px;}
+#aside table#archive td {padding:5px 0;}
+
+/* -----------------------
+Page: Home
+----------------------- */
+
+#photos img {margin-right:8px;}

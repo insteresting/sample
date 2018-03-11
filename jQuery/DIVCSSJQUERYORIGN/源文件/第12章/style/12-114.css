@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;	
+}
+body {
+	font-size: 12px;
+	color: #FFF;
+	line-height: 25px;
+	background-image: url(../images/11401.jpg);
+	background-repeat: repeat;
+}
+#box {
+	position: absolute;
+	width: 943px;
+	height: 630px;
+	left: 50%;
+	top: 57px;
+	margin-left: -500px;
+	background-image: url(../images/11402.png);
+	background-repeat: no-repeat;
+	padding: 48px 23px 25px 35px;
+}
+#logo {
+	position: absolute;
+	width: 766px;
+	height: 433px;
+	left: -300px;
+	top: -120px;
+}
+#right {
+	position: absolute;
+	width: 174px;
+	height: 373px;
+	right: -1px;
+	top: 35px;
+}
+#pic {
+	position: absolute;
+	width: 942px;
+	height: 81px;
+	padding-top: 19px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.4);
+	bottom: 27px;
+}
+#pic img {
+	margin-left: 10px;
+	margin-right: 10px;
+}

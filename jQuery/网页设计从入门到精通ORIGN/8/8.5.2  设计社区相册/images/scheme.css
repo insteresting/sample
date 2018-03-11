@@ -1,0 +1,69 @@
+
+/* ----------------------------------------
+HTML
+----------------------------------------- */
+
+body {background-color:#0a1f5c; color:#FFF;}
+
+a {color:#FFF;}
+a:hover {color:#8DDE35;}
+
+/* ----------------------------------------
+Layout
+----------------------------------------- */
+
+#header {background-color:#081745;}
+
+#logo {color:#FFF;}
+#logo a {border-top:5px solid #8DDE35; color:#FFF;}
+#logo a:hover {border-top:15px solid #8DDE35;}
+#logo span {color:#8DDE35;}
+
+#nav {background-color:#050f2e;}
+#nav ul li a {border-right:1px solid #0A1F5C; color:#A3B8F5;}
+#nav ul li#nav-active a {background:#8DDE35; color:#050f2e;}
+#nav ul li a:hover {background:#030817; color:#FFF;}
+
+#content {background:#081745;}
+
+#aside {background:#081745;}
+#aside .title {border-bottom:1px solid #152F52; background:#050F2E; color:#8DDE35;}
+
+#aside #search #search-input {border:1px solid #152F52; border-right:1px solid #1F477A; border-bottom:1px solid #1F477A; background:#050F2E; color:#FFF;}
+#aside #search #search-submit {background:#8DDE35; color:#050F2E;}
+
+#footer-top {background-color:#8DDE35;}
+#footer-bottom {background-color:#8DDE35;}        
+#footer {background:#8DDE35; color:#050F2E;}
+#footer a {color:#050F2E;}
+
+.low, .low a, a.low {color:#A3B8F5;}
+.low a:hover, a:hover.low {color:#FFF;}
+
+.high, .high a, a.high {color:#FFF;}
+.high a:hover, a:hover.high {color:#8DDE35;}
+
+/* ----------------------------------------
+Page: Home
+----------------------------------------- */
+
+#topstory {border-bottom:1px solid #152F52; background:#050F2E;}
+#topstory h2 a {color:#FFF;}
+#topstory h2 a:hover {color:#000;}
+#topstory p.info {color:#050F2E}
+#topstory p.info a {color:#050F2E;}
+#topstory p.info a:hover {color:#FFF;}
+
+#topstory #topstory-title {border-bottom:1px solid #80D620; background:#66B319;}
+
+.col50 .article.bg {background:#050F2E;}
+.col50 .article p {color:#A3B8F5;}
+.col50 .article p.info {color:#8DDE35;}
+.col50 .article p.info a {color:#FFF;}
+.col50 .article p.info a:hover {color:#BEED8D;}
+
+/* ----------------------------------------
+Others
+----------------------------------------- */
+
+.hx-style01 {color:#8DDE35;}

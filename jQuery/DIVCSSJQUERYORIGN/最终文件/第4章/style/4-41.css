@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body {
+	font-size: 12px;
+	color: #333;
+	background-image: url(../images/4101.png);
+}
+#box {
+	width: 900px;
+	height: 450px;
+	margin: 30px auto 0px auto;
+}
+
+
+

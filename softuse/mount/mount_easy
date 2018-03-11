@@ -1,0 +1,6 @@
+cd ~/Downloads
+for i in *.iso
+do 
+mkdir -p ~/Downloads/cdrom/$i
+sudo mount $i ~/Downloads/cdrom/$i
+done

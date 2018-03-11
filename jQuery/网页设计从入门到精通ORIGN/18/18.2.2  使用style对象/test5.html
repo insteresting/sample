@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css"></style>
+<script>
+window.onload = function(){
+	var box = document.getElementById("box");
+	box.onmouseover = function(){
+	   box.style.backgroundColor = "blue";
+	   box.style.border = "solid 50px red";
+	}
+	box.onclick = function(){
+	    box .innerHTML = "width:" + box.style.width;
+	    box .innerHTML = box .innerHTML + "<br>" +  "height:" + box.style.height;
+	}	
+	box.onmouseout = function(){
+	   box.style.backgroundColor = "red";
+	   box.style.border = "solid 50px blue";
+	}
+}
+</script>
+</head>
+<body>
+<div id="box" style="width:100px; height:100px; background-color:red; border:solid 50px blue;"></div>
+</body>
+</html>

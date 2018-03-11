@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 12px;
+	color: #333;
+	line-height: 25px;
+}
+#box {
+	width: 978px;
+	height: auto;
+	overflow: hidden;
+	margin: 0px auto;
+	padding-top: 20px;
+}
+#left {
+	width: 589px;
+	height: 240px;
+	float: left;
+}
+#news {
+	width: 358px;
+	height: 185px;
+	float: left;
+	margin-left: 1px;
+	background-image: url(../images/6002.jpg);
+	background-repeat: no-repeat;
+	background-color: #0A3035;
+	padding: 55px 15px 0px 15px;
+	color: #FFF;
+}

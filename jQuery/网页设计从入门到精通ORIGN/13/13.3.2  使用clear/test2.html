@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网页布局基本方法</title>
+<style type="text/css">
+div {
+    width: 200px; 							/* 固定宽度 */
+    height: 200px; 							/* 固定高度 */
+    border: solid 2px red; 					/* 边框样式 */
+    margin: 4px; 							/* 边界距离 */
+    float: left; 							/* 向左浮动 */
+}
+#box3 {
+    float: none; 							/* 禁止浮动*/
+    clear: left; 							/* 清除左侧浮动 */
+}/* 清除第三个盒子浮动显示，同时定义左侧不要有浮动元素 */
+</style>
+</head>
+<body>
+<div id="box1">盒子1</div>
+<div id="box2">盒子2</div>
+<div id="box3">盒子3</div>
+</body>
+</html>

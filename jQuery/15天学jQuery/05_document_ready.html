@@ -1,0 +1,41 @@
+<!DOCTYPE　html>
+<!--
+时间:
+作者:
+功能:
+-->
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+      //使用最简单的加载事件语法
+      $(function(){
+      alert("你好,这个提示框最先弹出!");
+      });
+      //完整的页面加载事件语法
+      $(document).ready(function(e) {
+      alert("这个对话框会按定义的次序在前一个对话框之后弹出!");
+      });
+      //第3种页面加载事件语法
+      $().ready(function(e) {
+      alert("简单的页面加载事件的写法");
+      });
+      //第4种页面加载事件语法
+      jQuery().ready(function(e){
+      alert("这个对话框会在最后被弹出!");
+      });
+    </script>
+    <style>
+
+
+    </style>
+  </head>
+  <body>
+
+
+
+
+  </body>
+  </html>

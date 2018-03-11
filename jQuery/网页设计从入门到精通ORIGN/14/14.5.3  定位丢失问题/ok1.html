@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>定位元素丢失问题</title>
+<style type="text/css">
+#wrap {
+    position:relative;
+    width:600px;
+    height:300px;
+    background:#ccc;
+    margin:30px auto auto;
+    text-align:center;    
+}
+#left, #mid, #right {
+    float:left;
+    width:200px;
+    height:100%;
+    line-height:100px;
+    margin-left:-1px;
+}
+#left { background:#FF99FF; }
+#mid { background:#CCCCFF; }
+#right { background:#9999FF; }
+#other {
+    position:absolute;
+    left:0;
+    top:-30px;
+    width:80px;
+    height:30px;
+    line-height:30px;
+    background:#669999;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+    <div id="other">标题</div>
+    <div id="left">左栏</div>
+    <div id="mid">中栏</div>
+    <div id="right">右栏</div>
+</div>
+</body>
+</html>

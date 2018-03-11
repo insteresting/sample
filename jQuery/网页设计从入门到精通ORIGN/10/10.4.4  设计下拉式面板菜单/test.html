@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>下拉式面板</title>
+<style type="text/css">
+#lists {
+    background: url(images/bg1.gif) #fff;
+    padding-left: 32px;
+    margin: 0px;
+    height:35px;
+    font-size:12px;
+}
+#lists li {
+    display:inline;
+    float:left;
+    height:35px;
+    background:url(images/menu5.gif) no-repeat left center;
+    padding-left:12px;
+    position:relative;
+}
+#lists li a.tl {
+    display:block;
+    width:80px;
+    height:35px;
+    text-decoration:none;
+    text-align:center;
+    line-height:35px;
+    font-weight:bold;
+    color:#fff;
+    background:url(images/menu5.gif) no-repeat right center;
+    padding-right:12px;
+}
+#lists div {
+    display:none;
+}
+#lists :hover div {
+    display:block;
+    width:598px;
+    background:#faebd7;
+    position:absolute;
+    left:1px;
+    top:34px;
+    border:1px solid #888;
+    padding-bottom:10px;
+}
+</style>
+</head>
+<body>
+<ul id="lists">
+    <li><a href="#" class="tl">商品导购
+        <!--[if IE 7]><!--></a><!--<![endif]-->
+        <!--[if lte IE 6]><table><tr><td><![endif]-->
+        <div class="pos1">
+            <dl id="menu">
+            	<dt>产品大类</dt>
+                <dd><a href="#" title="">图书、音像、数字商品</a></dd>
+                <dd><a href="#" title="">家用电器</a></dd>
+                <dd><a href="#" title="">手机、数码、京东通信预约</a></dd>
+                <dd><a href="#" title="">电脑、办公</a></dd>
+                <dd><a href="#" title="">家居、家具、家装、厨具</a></dd>
+                <dd><a href="#" title="">服饰内衣、珠宝首饰</a></dd>
+                <dd><a href="#" title="">个护化妆</a></dd>
+                <dd><a href="#" title="">鞋靴、箱包、钟表、奢侈品</a></dd>
+                <dd><a href="#" title="">运动户外</a></dd>                
+            </dl>
+        </div>
+        <!--[if lte IE 6]></td></tr></table></a><![endif]-->
+    </li>
+</ul>
+</body>
+</html>
+
+
+

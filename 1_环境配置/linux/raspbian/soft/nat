@@ -1,0 +1,3 @@
+cd /opt/nat123linux
+mono nat123linux.sh autologin lganame keps091794 
+

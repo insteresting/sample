@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>在HTML页面中调用XML数据——制作摄影图片网页</title>
+<link href="style/11-107.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+  function window_onload(){
+    var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+    xmlDoc.async = false;
+    xmlDoc.load("11-107.xml");      //调用XML文件
+    var nodes = xmlDoc.documentElement.childNodes;
+    menu1.innerText = nodes.item(0).text;
+    menu2.innerText = nodes.item(1).text;
+    menu3.innerText = nodes.item(2).text;
+    menu4.innerText = nodes.item(3).text;
+    menu5.innerText = nodes.item(4).text;
+    var nodes = xmlDoc.selectNodes("info//item");
+    $("photo1").src = nodes[0].attributes[0].value;
+    $("photo2").src = nodes[1].attributes[0].value;
+    $("photo3").src = nodes[2].attributes[0].value;
+    $("photo4").src = nodes[3].attributes[0].value;
+    $("photo5").src = nodes[4].attributes[0].value;
+    $("photo6").src = nodes[5].attributes[0].value;
+    $("photo7").src = nodes[6].attributes[0].value;
+    $("photo8").src = nodes[7].attributes[0].value;
+    $("photo9").src = nodes[8].attributes[0].value;
+  }
+  function $(id){
+    return document.getElementById(id);
+  }
+</script>
+</head>
+
+<body onload="window_onload()">
+<div id="box">
+  <div id="left">
+    <div id="logo"><img src="images/10702.png" width="209" height="252" /></div>
+    <div id="menu">
+      <ul>
+        <li><a href="#" class="link01"><span id="menu1"></span></a></li>
+        <li><a href="#"><span id="menu2"></span></a></li>
+        <li><a href="#"><span id="menu3"></span></a></li>
+        <li><a href="#"><span id="menu4"></span></a></li>
+        <li><a href="#"><span id="menu5"></span></a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="main">
+    <div id="pic1"><img src="" width="230" height="170" id="photo1" /></div>
+    <div id="pic2"><img src="" width="230" height="170" id="photo2" /></div>
+    <div id="pic3"><img src="" width="230" height="170" id="photo3" /></div>
+    <div id="pic4"><img src="" width="230" height="170" id="photo4" /></div>
+    <div id="pic5"><img src="" width="230" height="170" id="photo5" /></div>
+    <div id="pic6"><img src="" width="230" height="170" id="photo6" /></div>
+    <div id="pic7"><img src="" width="230" height="170" id="photo7" /></div>
+    <div id="pic8"><img src="" width="230" height="170" id="photo8" /></div>
+    <div id="pic9"><img src="" width="230" height="170" id="photo9" /></div>
+  </div>
+</div>
+<div id="bottom">
+  <div id="bottom-pic"><img src="images/10704.png" width="207" height="171" /></div>
+  <div id="bottom-text">Copyright 2000-2014 倾城摄影 All rights reserved.<br />
+  电话：010-00000000　E-Mail:xxxxxx@hotmail.com</div>
+</div>
+</body>
+</html>

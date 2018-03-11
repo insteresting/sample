@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title></title>
+<script>
+var request;
+function createXMLHttpRequest()// 创建XMLHttpRequest对象函数
+{
+    if( window.XMLHttpRequest )
+    {
+        request = new XMLHttpRequest();
+    }
+    else if ( window.ActiveXObject )
+    {
+        try
+        {
+            request = new ActiveXObject( "Msxml2.XMLHTTP" );
+        }
+        catch ( e )
+        {
+            try
+            {
+                request = new ActiveXObject( "Microsoft.XMLHTTP" );
+            }
+            catch ( e )
+            {
+                alert( "初始化XMLHttpRequest对象失败，请检查浏览器是否支持XMLHttpRequest组件。" );
+            }
+        }
+    }
+}
+createXMLHttpRequest();
+
+function check(str){
+   if (str.length > 0)
+   {
+      var url = "test.asp?q=" + str
+      request.open("GET", url , true)
+	  request.onreadystatechange = updatePage;
+      request.send(null)
+   }
+}
+
+function updatePage()
+{
+    var info = document.getElementById("txtHint");
+    if( request.readyState == 4 )
+    {
+        if( request.status == 200 )
+        {
+			info.innerHTML = request.responseText;
+        }
+        else
+        alert( request.status );
+    }
+
+}
+
+function ok(o){
+	  var o1 =  document.getElementById("ok1");
+      document.getElementById("txt1").value = o.value;
+}
+</script>
+</head>
+<body>
+<h1>快速匹配搜索</h1>
+<form>
+    <label for="txt1">关 键 词:</label>
+    <input name="txt1" type="text" id="txt1" onkeyup="check(this.value)" size="60"><input name="" type="submit" value="提交">
+</form>
+<p>快速匹配: <span id="txtHint">
+    <select>
+        <option>请输关键词</option>
+    </select>
+    </span></p>
+</body>
+</html>

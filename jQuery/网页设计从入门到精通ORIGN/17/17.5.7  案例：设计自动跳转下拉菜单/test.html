@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+</style>
+<script>
+window.onload = function(){
+	var a = document.getElementsByTagName("select")[0];
+	a.onchange = function(){
+	   window.open(this.value,"");	 	// 根据下拉列表框的当前值打开指定的网址
+	}
+}
+</script>
+</head>
+<body>
+<select>
+	<option value="#">请选择网站</option>
+    <option value="http://www.baidu.com/">百度</option>
+     <option value="http://www.google.cn/">Google</option>
+</select>
+</body>
+</html>

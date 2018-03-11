@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+</style>
+<script>
+</script>
+</head>
+<body>
+<p id="p1">注册兼容性事件</p>
+<script>
+var p1 = document.getElementById("p1");			// 捕获段落元素的句柄
+var f1 = function(){
+    p1.style.background = 'blue';
+};
+var f2 = function(){
+    p1.style.background = 'red';
+	if(p1.detachEvent){
+		p1.detachEvent("onmouseover", f1);
+		p1.detachEvent("onmouseout", f2);
+	}
+	else{
+		p1.removeEventListener("mouseover", f1);
+		p1.removeEventListener("mouseout", f2);		
+	}
+};
+if(p1.attachEvent){
+	p1.attachEvent("onmouseover", f1);		
+	p1.attachEvent("onmouseout", f2);	
+}
+else{
+	p1.addEventListener("mouseover", f1);
+	p1.addEventListener("mouseout", f2);		
+}
+</script>
+</body>
+</html>

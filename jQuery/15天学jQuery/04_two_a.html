@@ -1,0 +1,71 @@
+<!DOCTYPE　html>
+<!--
+时间:
+作者:
+功能:
+-->
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+   
+    <style>
+      body{
+      margin:0;
+      padding:40px;
+      background:#fff;
+      font:80% Arial, Helvetica, sans-serif;
+      color:#555;
+      line-height:180%;
+      }
+      p{
+      clear:both;
+      margin:0;
+      padding:.5em 0;
+      }
+      /*tooltip(/
+      #tooltip{
+      position:absolute;
+      border:1px solid #333
+      background:#f7f5d1;
+      padding:1px;
+      color:#333;
+      display:none;
+      }
+    </style>
+     <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+      //<![CDATA[
+      $(function(){		
+      var x = 10;
+      var y = 20;
+      $("a.tooltip").mouseover(function(e){
+      this.myTitle = this.title;
+      this.title = "";
+      var tooltip = "<div id='tooltip'>"+ this.myTitle +"<\div>"; //创建div元素
+	  $("body").append(tooltip); //把它追加到文档中	 
+	  $("#tooltip")
+	  .css({
+	  "top":(e.pageY+y) + "px",
+	  "left": (e.pageX+x) + "px"
+	  }).show("fast"); //设置x坐标和y坐标，并且显示
+	  }).mouseout(function(){
+	  this.title=this.myTitle;
+	  $("#tooltip")
+	  .css({
+	  "top": (e.pageY+y) + "px",
+	  "left": (e.pageX+x) + "px"
+	  });
+	  });
+	  })			
+
+    </script>
+  </head>
+  <body>
+<!--超级链接-->
+<p><a href="#" class="tooltip" title="超链接提示1">提示1.</a></p>
+<p><a href="#" class="tooltip" title="超链接提示2">提示2.</a></p>
+
+
+  </body>
+  </html>

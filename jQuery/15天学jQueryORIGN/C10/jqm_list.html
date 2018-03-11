@@ -1,0 +1,42 @@
+<!DOCTYPE html>     
+<html>     
+<head>     
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>简单的新闻列表</title>     
+<meta name="viewport" content="width=device-width, initial-scale=0.5">     
+<link rel="stylesheet" href="jquery.mobile-1.4.5.css" />     
+<script src="jquery.js"></script>     
+<script src="jquery.mobile-1.4.5.js"></script>     
+</head>               
+<body>
+	<div data-role="page">
+    	<div data-role="header" data-position="fixed" data-fullscreen="true">
+        	<a href="#">返回</a>    
+            <h1>今日新闻</h1>    
+            <a href="#">设置</a>
+        </div>
+		<!—注意，在本例中仅用了头部栏和尾部栏而没有内容栏-->
+			<!—使用ul标签声明列表控件-->
+			<ul data-role="listview">
+				<!—列表中的每一项用li来声明，其中加入a标签可使列表可单击-->
+				<li><a href="#">中美海军举行联合反海盗演习 首次演练实弹射击
+</a></li>
+<li><a href="#">安徽回应警察目睹少女被杀:不护短已提请检方介入</a></li>
+<!---以下代码雷动，读者可自行复制粘贴-->
+				<li><a href="#">美“51区”雇员称内有9架飞碟 曾见灰色外星人 </a></li>
+				<li><a href="#">巴基斯坦释放337名印度在押人员</a></li>
+			</ul>
+        <div data-role="footer" data-position="fixed" data-fullscreen="true">
+			<div data-role="navbar">
+				<ul>
+					<li><a id="chat" href="#" data-icon="custom">今日新闻</a></li>        
+					<li><a id="email" href="#" data-icon="custom">国内新闻</a></li>        
+					<li><a id="skull" href="#" data-icon="custom">国际新闻</a></li>        
+					<li><a id="beer" href="#" data-icon="custom">设置</a></li>         
+				</ul>
+			</div>
+		</div>
+    </div>
+</body>
+</html>
+

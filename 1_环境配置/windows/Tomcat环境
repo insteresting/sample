@@ -1,0 +1,8 @@
+环境变量
+
+1，新建变量名：CATALINA_BASE，变量值：C:\tomcat
+
+2，新建变量名：CATALINA_HOME，变量值：C:\tomcat
+
+3，打开PATH，添加变量值：%CATALINA_HOME%\lib;%CATALINA_HOME%\bin
+

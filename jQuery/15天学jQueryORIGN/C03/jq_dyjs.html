@@ -1,0 +1,19 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>动态JavaScript调用</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<script type="text/javascript">
+			function showAge(data){  					//自定义函数
+				alert("Name:" + data.name + ", Age:" + data.age);  //展示信息数据
+			}  
+			var url = "info.js";							//外部的URL地址 
+			var script = document.createElement('script');  	//动态创建脚本标签
+			script.setAttribute('src', url);  					//设置脚本的路径
+			//加载脚本
+			document.getElementsByTagName('head')[0].appendChild(script);  
+		</script>  
+	</head>
+	<body style="text-align:center">	
+	</body>
+</html>

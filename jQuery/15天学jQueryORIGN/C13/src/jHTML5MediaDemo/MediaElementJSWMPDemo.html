@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>基于MediaElement.js插件模仿WMP的HTML5播放器应用</title>	
+	
+	<script src="build/jquery.js"></script>	
+	<script src="build/mediaelement-and-player.min.js"></script>
+	<script src="testforfiles.js"></script>	
+	<link rel="stylesheet" href="build/mediaelementplayer.min.css" />
+        <link rel="stylesheet" href="build/mejs-skins.css" />
+</head>
+<body>
+
+<h1>MediaElementPlayer.js - 基于MediaElement.js插件模仿WMP的HTML5播放器应用</h1>
+
+<p>模拟 Windows Media Player 播放器样例</p>
+<p>通过为 video 标签添加 CSS 样式类 class="mejs-myskin" 实现WMP播放器皮肤</p>
+<p>"mejs-myskin"样式名在 mejs-skins.css 文件中定义</p>
+
+<h2>Windows Media Player(WMP) 风格播放器</h2>
+
+<video class="mejs-wmp" width="640" height="360" src="media/echo-hereweare.mp4" type="video/mp4" 
+	id="player1" poster="media/echo-hereweare.jpg" 
+	controls="controls" preload="none"></video>
+
+
+<script>
+$('audio,video').mediaelementplayer({
+	success: function(player, node) {
+		$('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+	}
+});
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>插入元素</title>
+    <style type="text/css">
+      body,td,th,input {
+      font-size: 9pt;
+      }
+    </style>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(e) {
+      $("#idAppend").click(
+      function(){
+      //追加内容
+      $("#idcontent").append("<b>使用append添加元素</b><br/>");
+      }
+      };
+      $("#idappendTo").click(
+      function(){
+      //追加内容，语法与append颠倒
+      $("<b>使用appendto添加元素</b><br/>").appendTo("#idcontent");
+      }
+      );
+      $("#idpredend").click(
+      function(){
+      //插入前置内容
+      $("#idcontent").prepend("<b>使用prepend插入前置内容</b><br/>");
+      }
+      );
+      $("#idpredendTo").click(
+      function(){
+      //在元素中插入前缀元素，与prepend的操作语法颠倒
+      $("<b>欢使用prependTo添加元素</b><br/>").prependTo("#idcontent");
+      }
+      );
+      $("#idbefore").click(
+      function(){
+      //在指定元素的前面插入内容
+      $("#idconetent").before("<b>使用before添加元素</b><br/>");
+      }
+      );
+      $("#idafter").click(
+      function(){
+      //在指定元素的后面插入内容
+      $("#idcontent").after("<b>使用after添加元素</b><br/>");
+      }
+      );
+      $("#idinsbefore").click(
+      function(){
+      //在指定元素前面插入内容，与before语法颠倒
+      $("<b>使用insertBefore添加元素</b><br/>").insertBefore("#idcontent");
+      }
+      );
+      $("#idinsafter").click(
+      function(){
+      //在指定元素的后面插入内容 ，与after的语法颠倒
+      $("<b>使用insertAfter添加元素</b><br/>").insertAfter("#idcontent");
+      }
+      );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="idbtn">
+      <input type="button" name="idAppend" id="idAppend" value="append方法"/>
+      &nbsp;
+      <input type="button" name="idAppendTo" id="idappendTo" value="appendTo方法"/>
+      &nbsp;
+      <input type="button" name="idpredend" id="idpredend" value="predend方法"/>
+      &nbsp;
+      <input type="button" name="idpredenTo" id="idpredendTo" value="predendTo方法"/>
+      &nbsp;
+      <input type="button" name="idbefore" id="idbefore" value="before方法"/>
+      &nbsp;
+      <input type="button" name="idafter" id="idafter" value="after方法"/>
+      &nbsp;
+      <input type="button" name="idinsbefore" id="idinsbefore" value="insertBefore方法"/>
+      &nbsp;
+      <input type="button" name="idinsafter" id="idinsafter" value="insertAfter方法"/>
+    </div>
+    <div id="idcontent">使用不同的按钮，用不同的方法插入页面<br/></div>
+  </body>
+</body>
+</html>
+y

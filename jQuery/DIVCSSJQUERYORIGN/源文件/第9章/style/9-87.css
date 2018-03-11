@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 12px;
+	color: #FFF;
+	line-height: 20px;
+	background-image: url(../images/8701.png);
+	background-repeat: repeat-x;
+}
+#box {
+	width: 858px;
+	height: 100%;
+	overflow: hidden;
+	margin: 0px auto;
+}
+#top {
+	width: 858px;
+	height: 101px;
+	background-image: url(../images/8702.gif);
+	background-repeat: no-repeat;
+}
+#menu {
+	width: 514px;
+	height: 31px;
+	float: right;
+	margin-top: 70px;
+}
+#menu img {
+	margin-right: 10px;
+}
+#main {
+	width: 800px;
+	background-image: url(../images/8711.jpg);
+	background-repeat: no-repeat;
+	padding-top: 200px;
+	margin: 0px auto 20px auto;
+}
+#main img {
+	border: solid 10px #FFF;
+}
+#bottom-bg {
+	width: 100%;
+	height: 60px;
+	background-color: #75550C;
+	padding-top: 30px;
+}
+#bottom {
+	width: 858px;
+	height: 60px;
+	text-align: center;
+	margin: 0px auto;
+}

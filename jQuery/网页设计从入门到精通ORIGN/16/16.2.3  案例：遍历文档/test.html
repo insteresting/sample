@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<script>
+window.onload = function(){
+    var tag = document.getElementsByTagName("ul")[0];	// 获取列表结构元素
+    var a = tag.childNodes; 							// 获取列表结构包含的所有列表项节点
+    alert(a[0].nodeName); 							// 显示第一个列表项的节点名称
+}
+</script>
+</head>
+<body>
+<h1>标准DOM</h1>
+<p>这是一份简单的<strong>文档对象模型</strong></p>
+<ul>
+    <li>D表示文档，DOM的物质基础</li>
+    <li>O表示对象，DOM的思想基础</li>
+    <li>M表示模型，DOM的方法基础</li>
+</ul>
+</body>
+</html>

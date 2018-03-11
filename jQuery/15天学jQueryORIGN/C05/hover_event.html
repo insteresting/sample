@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>hover切换事件示例</title>
+<style type="text/css">
+/*容器样式*/
+#container {
+	height: 150px;
+	width: 500px;
+}
+/*内容面板样式*/
+#content{
+     border: 1px solid #060;
+	display:none;
+}
+/*默认字体样式*/
+body,td,th {
+	font-size: 9pt;
+}
+h2 {
+	background-color: #CCC; }
+</style>
+<script type="text/javascript" src="../jquery-3.1.1.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(e) {
+	 //为h2元素定义切换事件
+    $("h2").hover(
+	  //当鼠标移动到h2里面时，调用show方法
+	  function(){
+		  $("#content").show("fast");
+	  },
+	  //当鼠标移出h2元素时，调用hide方法
+	  function(){
+		  $("#content").hide("fast");
+	  }
+	);
+});
+</script>
+</head>
+<body>
+<div id="container">
+<h2 style="margin:0px">关于hover方法的作用</h2>
+<div id="content">
+	hover方法：当鼠标移动到元素上或者是移出元素时执行事件处理代码，hover方法实际上是对mouseenter和mouseleave事件的合并，用来模仿一种鼠标悬停的效果。
+</div>
+</div>
+</body>
+</html>

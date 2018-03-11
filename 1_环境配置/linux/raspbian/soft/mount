@@ -1,0 +1,6 @@
+sudo umount /dev/sdb4
+sudo mount /dev/sdb4 /samba -t ext4
+chmod 777 /samba
+sudo umount /dev/sdd4
+sudo mount /dev/sdd4 /var/www/html -t ext4 
+chmod 777 /var/www/html

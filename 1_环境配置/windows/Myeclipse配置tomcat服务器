@@ -1,0 +1,6 @@
+首先我们打开Myeclipse，进入偏好设置window-perference:如下图所示:
+进入偏好设置（perference），在偏好设置的搜索栏那里输入tomcat查找tomcat
+第一个是Myeclipse的自带tomcat，然后是自己下载使用的tomcat版本，有5.x，6.x，4.x，我们最常用的就是tomcat6.0，在这里我们以6.0作为说明:
+在这里我们点击tomcat6.0进入，然后将自己安装目录添加进去。
+然后我们找到Myeclipse自带的tomcat项，将自带的tomcat设为禁用(disable)。如图所示:
+

@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: 宋体;
+	font-size: 12px;
+	color: #333;
+	background-image: url(../images/8601.jpg);
+}
+#box {
+	width: 860px;
+	height: 594px;
+	background-image: url(../images/8602.jpg);
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	padding: 70px 30px 30px 30px;
+}
+.contrast {
+	-webkit-filter: contrast(1.5);
+}

@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-image:url(../images/9701.gif);
+	background-repeat:repeat;
+}
+#box{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+#logo{
+	height:53px;
+	padding-top:15px;
+	background-image:url(../images/9702.gif);
+	background-repeat:repeat-x;
+}
+#main{
+	width:928px;
+	height:100%;
+	overflow:hidden;
+	margin:10px auto;
+}
+#main img{
+	margin:5px 5px;
+}
+.pic{
+	padding:3px;
+	background-color: #FFF;
+	border:solid #F90 3px;
+}
+.pic01{
+	padding:3px;
+	background-color: #FFF;
+	border:dashed #F90 3px;
+}
+.pic02{
+	padding:3px;
+	background-color: #FFF;
+	border:dotted #F90 3px;
+}
+.pic03{
+	padding:3px;
+	background-color: #FFF;
+	border:double #F90 3px;
+}

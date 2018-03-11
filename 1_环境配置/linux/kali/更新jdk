@@ -1,0 +1,20 @@
+ 6.设置默认jdk（假如有openjdk的话）
+
+由于Ubuntu中可能会有默认的jdk，如openjdk。假如有openjdk的话，所以，为了使默认使用的是我们安装的jdk，还要进行如下工作（可以使用该命令安装其他命令，例如eclipse）。
+执行代码:
+
+    sudo update-alternatives --install /usr/bin/java java /opt/jdk1.7.0_25/bin/java 300  
+    sudo update-alternatives --install /usr/bin/javac javac /opt/jdk1.7.0_25/bin/javac 300  
+
+通过这一步将我们安装的jdk加入java选择单。
+
+然后执行代码:
+
+    sudo update-alternatives --config java  
+    sudo update-alternatives --config javac  
+
+通过这一步选择系统默认的jdk
+
+7.查看java版本，显示为我们自己设置的jdk
+
+jack@jack$ java -version

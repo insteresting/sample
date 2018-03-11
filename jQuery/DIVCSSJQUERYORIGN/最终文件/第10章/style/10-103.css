@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-image:url(../images/10301.jpg);
+	background-repeat:repeat;
+	background-position:center top;
+}
+#box{
+	width:860px;
+	height:472px;
+	margin:0px auto;
+	background-image:url(../images/10302.png);
+	background-repeat:no-repeat;
+	background-position:top center;
+	margin-bottom:15px;
+	padding-top:75px;
+	padding-left:160px;
+}
+#pic{
+	width:700px;
+	height:200px;
+	margin-bottom:20px;
+}
+#pic01{
+	width:700px;
+	height:200px;
+	margin-top:10px;
+}

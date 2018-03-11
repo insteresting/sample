@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>浮动布局中栏目内容被隐藏的问题</title>
+<style type="text/css">
+#wrap {
+    background:#FFCCFF;
+}
+#left {
+    float : left;
+    width : 300px;
+    height: 200px;
+    background:#CCCCFF;
+}
+#header h1 {
+    background:#6699CC;
+    margin:0;
+}
+#footer {
+    width:100%;
+    clear:both;
+    background:#9933FF;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <h1>网页标题</h1>
+    </div>
+    <div id="left">
+        <h3>左栏标题</h3>
+        <p>正文</p>
+    </div>
+    <div id="right">
+        <h3>右栏标题</h3>
+        <p>段落文本</p>
+        <p>段落文本</p>
+    </div>
+    <div id="footer">版权信息</div>
+</div>
+</body>
+</html>

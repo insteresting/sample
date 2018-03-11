@@ -1,0 +1,31 @@
+<!DOCTYPE　HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=uft-8">
+    <title>for循环</title>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(e){
+      $("#btn1").click(function(e) {
+      $("#test2").after("<input type='button'/><br/>");//添加按钮
+      $("#test2").after("<input type='button'/><br/>");//添加按钮
+      $("#test2").after("<input type='button'/><br/>");//添加按钮
+      var $inputs = $('input');
+      for (var i = 0; i < $inputs.length; i++) { //循环为按钮添加值
+			  $inputs[i].value='按钮' + i;
+			  }
+			  });
+			  });
+			  </head>
+  <body>
+    <p id="test">
+      给所有的input指定值
+    </p>
+    <div>
+      <button id="btn1">添加3个按钮</button>
+    </div>
+    <div id="test2"></div>
+  </body>
+</html>
+   

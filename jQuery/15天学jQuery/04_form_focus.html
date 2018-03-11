@@ -1,0 +1,56 @@
+<!DOCTYPE　html>
+<!--
+时间:
+作者:
+功能:
+-->
+<html>
+  <head>
+    <title>焦点的获取与失去</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+      $(function(){
+      $(":input").focus(function(){ //获取焦点
+      $(this).addClass("focus");
+      }).blur(function(){
+      $(this).removeClass("focus");
+      });
+})
+    </script>
+    <style>
+      body{
+      font:normal 12px/17px Arial;
+      }
+      div{
+      padding:2px
+      }
+      input, textarea {
+      width: 12em;
+      border: 1px solid #888;
+      }
+      .focus {
+      border: 1px solid #f00;
+      background:#fcc;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="" method="post" id="regForm">
+      <fieldset>
+	<legend>个人基本信息</legend>
+	<div>
+	  <label for="username">名称:</label> <!--名称文本框-->
+	  <input id="username" type="text"/>
+	</div>
+	<div>
+	  <label for="pass">密码;</label> <!--密码文本框-->
+	  <input id="pass" type="password"/>
+</div>
+      </fieldset>
+    </form>
+    
+
+  </body>
+  </html>

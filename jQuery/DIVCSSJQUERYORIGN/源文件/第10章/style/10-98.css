@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: #FFF;
+	line-height: 30px;
+	background-color: #3A3B43;
+}
+#banner {
+	width: 1120px;
+	height: 695px;
+	background-image: url(../images/9801.jpg);
+	background-repeat: no-repeat;
+	margin: 0px auto;
+}
+
+

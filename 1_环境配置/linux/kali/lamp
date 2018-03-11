@@ -1,0 +1,4 @@
+#apt-key adv --keyserver hkp://keys.gnupg.net --recv-keys 7D8D0BF6
+apt update
+apt -y install mysql-server mysql-client apache2 php5 libapache2-mod-auth-mysql php5-mysql
+apt autoremove

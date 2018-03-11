@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>基于MediaElement.js插件的HTML5播放器应用</title>	
+	<script src="build/jquery.js"></script>		
+	<script src="build/mediaelement.js"></script>
+	<script src="testforfiles.js"></script>	
+</head>
+<body>
+
+<h1>MediaElement.js - 基于MediaElement.js插件的HTML5播放器应用</h1>
+
+<p>这仅仅是一个支持 Flash/Silverlight Shim 的早期浏览器页面</p>
+
+<p>本页面无需任何一款 codec 解码器插件也可以播放音视频文件</p>
+
+<p>仅仅是一个简单测试，不提供音视频播放器功能</p>
+
+<h2>MP4 video (as src)</h2>
+<video width="360" height="300" id="player1" src="media/echo-hereweare.mp4" type="video/mp4" controls="controls"></video>
+<br>
+<!-- 暂停/重启播放功能 -->
+<input type="button" id="pp" value="toggle" />
+<!-- 时间轴 -->
+<span id="time"></span>
+	
+
+	
+<script>
+MediaElement('player1', {success: function(me) {
+	
+	me.play();
+	
+	me.addEventListener('timeupdate', function() {
+		document.getElementById('time').innerHTML = me.currentTime;
+	}, false);
+
+	document.getElementById('pp')['onclick'] = function() {
+		if (me.paused)
+			me.play();
+		else
+			me.pause();
+	};
+
+}});
+</script>
+
+</body>
+</html>

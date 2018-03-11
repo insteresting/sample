@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+body{
+	font-family:微软雅黑;
+	font-size:14px;
+	color: #900;
+	line-height:20px;
+}
+#box{
+	width:550px;
+	height:675px;
+	background-image:url(../images/3001.jpg);
+	background-repeat:no-repeat;
+	margin:0px auto;
+}
+#title{
+	width:288px;
+	height:64px;
+	padding:90px 131px 10px 131px;
+}
+#main{
+	width:420px;
+	height:480px;
+	margin:0px auto;
+}
+#pic,#pic01,#pic02{
+	width:420px;
+	height:160px;
+}
+#pic img,#pic01 img,#pic02 img{
+	border:#CCC solid 1px;
+	margin:2px 5px;
+}
+.font01{
+	vertical-align:top;
+}
+.font02{
+	vertical-align:middle;
+}
+.font03{
+	vertical-align:bottom;
+}

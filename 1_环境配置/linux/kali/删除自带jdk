@@ -1,0 +1,21 @@
+ 今天自己装了一一遍jdk，发现在终端运行java -version时，总显示ubantu自带的openjdk版本
+
+
+于是在网上找了卸载jdk的方法：
+
+自已安装你需要的jdk,例如你安装在/opt/jdk/这个位置。
+然后你修改/etc/profile
+在里面设置PATH, CLASSPATH, JAVA_HOME等变量，
+就像下面这样：
+export JAVA_HOME=/opt/jdk
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export PATH=$PATH:$JAVA_HOME/bin
+
+
+然后保存并重启系统，然后就可以使用你安装的JDK了
+
+如果你确实要卸载，开一个终端，以root身份运行：
+apt-get remove openjdk*
+
+
+就可以卸载了。然后重新安装。

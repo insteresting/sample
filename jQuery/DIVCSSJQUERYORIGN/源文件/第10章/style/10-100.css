@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color: #FFF;
+	line-height: 30px;
+	background-color: #2E323C;
+	background-image: url(../images/10001.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#box {
+	width: 600px;
+	height: auto;
+	overflow: hidden;
+	margin: 0px auto;
+	padding-top: 240px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #D91B5C;
+	text-align: center;
+	line-height: 80px;
+}
+

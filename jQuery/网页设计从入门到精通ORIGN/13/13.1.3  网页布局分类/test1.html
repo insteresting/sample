@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网页布局分类</title>
+<style type="text/css">
+body { text-align:center;} 			/* 网页居中显示（IE下） */
+#model {/* 单行单列布局模板  */
+    margin-left:auto; 				/* 左侧边界自动，实现包含框自动居中（FF下） */
+    margin-right:auto; 				/* 右侧边界自动，实现包含框自动居中（FF下） */
+    text-align:left; 					/* 正文文本左对齐显示  */
+}
+#header, #main, #footer {/* 分隔栏目样式 */
+    border:2px solid red; 			/* 栏目分隔线  */
+    margin-bottom:4px; 			/* 栏目间距  */
+}
+</style>
+</head>
+
+<body>
+<div id="model">
+    <div id="header">
+        <h1>网页标题</h1>
+        <h2>网页副标题</h2>
+    </div>
+    <div id="main">
+        <div id="content">
+            <h3>主信息区域</h3>
+        </div>
+        <div id="subplot">
+            <h3>次信息区域</h3>
+        </div>
+        <div id="serve">
+            <dl>
+                <dt>功能服务区域</dt>
+                <dd>服务列表项</dd>
+                <dd>服务列表项</dd>
+            </dl>
+        </div>
+    </div>
+    <div id="footer">
+        <p>版权信息区域</p>
+    </div>
+</div>
+</body>
+</html>

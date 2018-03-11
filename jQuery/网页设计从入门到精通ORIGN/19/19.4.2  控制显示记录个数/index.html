@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title></title>
+<script>
+var request;
+function createXMLHttpRequest()// 创建XMLHttpRequest对象函数
+{
+    if( window.XMLHttpRequest )
+    {
+        request = new XMLHttpRequest();
+    }
+    else if ( window.ActiveXObject )
+    {
+        try
+        {
+            request = new ActiveXObject( "Msxml2.XMLHTTP" );
+        }
+        catch ( e )
+        {
+            try
+            {
+                request = new ActiveXObject( "Microsoft.XMLHTTP" );
+            }
+            catch ( e )
+            {
+                alert( "初始化XMLHttpRequest对象失败，请检查浏览器是否支持XMLHttpRequest组件。" );
+            }
+        }
+    }
+}
+createXMLHttpRequest();
+
+function check(){
+    var coun = document.getElementById( "coun" ).value;
+    request.open( "GET", "test.asp?coun=" + coun, true );
+    request.onreadystatechange = updatePage;
+    request.send( null );
+}
+
+function updatePage()
+{
+    var info = document.getElementById( "info" );
+    if( request.readyState == 1 )
+    {
+        info.innerHTML = "<img src='images/loading.gif' />，连接中......";
+    }
+    else if( request.readyState == 2 || request.readystate == 3 )
+    {
+        info.innerHTML = "<img src='images/loading.gif' />，读数据......";
+    }
+    else if( request.readyState == 4 )
+    {
+        if( request.status == 200 )
+        {
+            xml = request.responseXML;
+            info.innerHTML = showXml( xml );
+        }
+        else
+        alert( request.status );
+    }
+
+}
+
+function showXml( xml )
+{
+    var count = "";
+    var html = "";
+    var items = xml.getElementsByTagName( "item" );
+    html += "<table><tr><th>成员名</th><th>类型</th><th>说明</th></tr>"
+    //for( var i  in  items ){
+	for( var i=0 ; i< items.length; i++ ){
+        html += "<tr>"
+        var child = items[i].childNodes
+        //for( var n in child ){
+		for( var n=0 ; n< child.length; n++ ){
+			if( child[n].nodeType == 1 ){
+				html += "<td>"
+				html += child[n].firstChild.data;
+				html += "</td>"
+			}
+        }
+        html += "</tr>";
+    }
+    html += "</table>"
+    return html;
+}
+</script>
+<style type="text/css">
+table {
+    margin:1em;
+    border-collapse:collapse;
+    border:solid 1px #FF33FF;
+}
+td, th {
+    border:solid 1px #FF33FF;
+    padding:4px 8px;
+}
+</style>
+</head>
+<body>
+<h1>显示记录个数</h1>
+显示记录数：
+<input name="coun" type="text" id="coun">
+（最多14条）
+<input type="button" onClick="check();" value="查询">
+<div id="info"></div>
+</body>
+</html>

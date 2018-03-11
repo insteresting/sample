@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+	line-height: 20px;
+	background-color: #D3D0C3;
+}
+#box {
+	width: 874px;
+	height: 668px;
+	margin: 30px auto 0px auto;
+}
+#menu {
+	height: 22px;
+	margin-bottom: 1px;
+}
+#text {
+	width: 292px;
+	height: 522px;
+	background-color: #FFF;
+	padding: 60px 20px 20px 20px;
+	float: left;
+}
+.font-big {
+	font-size: 36px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	color: #CAC6B7;
+}
+#pic {
+	width: 542px;
+	height: 602px;
+	float: left;
+}
+#bottom {
+	clear: left;
+	height: 43px;
+	background-color: #231F20;
+}

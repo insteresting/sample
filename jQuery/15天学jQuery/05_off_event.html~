@@ -1,0 +1,81 @@
+<!DOCTYPE　html>
+<!--
+时间:
+作者:
+功能:
+-->
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+      body,td,th,input {
+      font-size: 9pt;
+      }
+      #content {
+      /*jQuery的show方法仅对display:none有效果*/
+      display: none;
+      /*设置DIV边框*/
+      border: 1px solid #060;
+      }
+    
+
+    </style>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(e){
+      //绑定到按钮的click事件,动态显示DIV内容
+      $("#btn1").on("click",function(){
+      $("#content").show(3000);
+      });
+      //绑定到按钮的click事件，动画显示或隐藏DIV内容
+      $("#btn2").on("click",function(){
+      //如果DIV当前已经显示
+      if($("#content").is(":visible")){
+      //则隐藏DIV的显示
+      $("#content").hide(1000,showColor);
+      }
+      else
+      {
+      //否则动画显示DIV元素
+      $("#content").show(3000,showColor);
+      //设置显示时的颜色为黄色，动画显示完成时回调函数设置为绿色
+      $("#content").css("background-color","yellow");
+      }
+      });
+      $("#btn3").click(
+      function(){
+      //移除btn1的click事件处理
+      $("#btn").off("click");
+      });
+      $("#btn4").click(
+      function(){
+      //移除btn2的所有事件处理
+      $("#btn2").off();
+      });
+      });
+      //动画显示时回调函数
+      function showColor()
+      {
+      $("#content").css("background-color","green");
+      }
+     
+    </script>
+  </head>
+  <body>
+    <input type="button" name="btn1" id="btn1" value="显示消息"/><br/>
+    <input name="btn2" type="button" id="btn2" value="特效动画"/><br/>
+    <input type="button" name="btn3" id="btn3" value="移除按钮1的事件"/><br/>
+    <input type="button" name="btn4" id="btn4" vlaue="移除按钮2的事件"/>
+    <div id="content">
+      <pre>
+	$(selector).bind(event,data,function)
+	参数的作用如下所示:
+	event参数可以是所有的javaScript事件对象,有如下的这些事件处理类型;blur,focus,focusin,load,resize,scroll,unload,dblclick,mousedown,mouseup,mouseover,mouseout,mouseenter,mouseleave,change,select,submit,keydown,keyup,error可以作为event参数传入。
+	可选的data参数作为event.data属性值传递给事件对象的额外数据对象。
+	function则是用来绑定的处理函数，一般事件处理代码就写在这个函数的函数体内。
+      </pre>
+      </div>
+
+  </body>
+  </html>

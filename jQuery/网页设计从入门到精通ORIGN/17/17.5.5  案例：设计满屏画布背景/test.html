@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+html, body{
+    padding:0;
+    margin:0;
+    overflow:hidden;
+}
+img#box {
+    position:absolute;
+    z-index:-1;
+}
+</style>
+<script>
+function w(){					// 获取窗口宽度
+    if (window.innerWidth) 		// 兼容DOM
+        return window.innerWidth;
+    else if ((document.body) && (document.body.clientWidth)) 
+	// 兼容IE
+        return document.body.clientWidth;
+}
+function h(){					// 获取窗口高度
+    if (window.innerHeight) 	// 兼容DOM
+        return window.innerHeight;
+    else if ((document.body) && (document.body.clientHeight)) 
+	// 兼容IE
+        return document.body.clientHeight;
+}
+window.onresize = function(){	// 注册resize事件处理函数，动态调整盒子大小
+    box.style.width = w()  + "px";
+    box.style.height = h()  + "px";
+}
+window.onload = function(){
+	var box = document.getElementById("box");		// 获取盒子的引用指针
+	box.style.position = "absolute";				// 绝对定位
+	box.style.zIndx = -1;
+	box.style.backgroundColor = "red";		// 背景色
+	box.style.width = w()  + "px";	// 设置盒子宽度为窗口宽度的0.8倍
+	box.style.height = h()  + "px";	// 设置盒子高度为窗口高度的0.8倍
+}
+</script>
+</head>
+<body>
+<img src="images/bg.jpg" id="box" />
+</body>
+</html>

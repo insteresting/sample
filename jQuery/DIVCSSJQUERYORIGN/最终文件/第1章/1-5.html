@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML 5&lt;canvas&gt;标签——在网页中实现圆形图片</title>
+<link href="style/1-5.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="box"><img src="images/501.jpg"  alt=""/>
+  <canvas id="canvas" width="600" height="500"></canvas>
+  <canvas id="canvas2" width="700" height="600"></canvas>
+<script type="text/javascript">
+var canvas=document.getElementById("canvas2");
+var context=canvas.getContext("2d");
+context.arc(300,300,250,0,Math.PI*2,true);
+context.fillStyle="#011E46";
+context.fill();
+function Draw(){
+	var canvas=document.getElementById("canvas");
+    var context=canvas.getContext("2d");
+	var newImg=new Image();
+	newImg.src="images/502.jpg";
+	newImg.onload=function(){
+		ArcClip(context);
+		context.drawImage(newImg,0,0);
+		}	
+}
+function ArcClip(context){
+	context.beginPath();
+	context.arc(250,250,235,0,Math.PI*2,true);
+	context.clip();
+	}
+window.addEventListener("load",Draw,true);
+</script>
+</div>
+</body>
+</html>

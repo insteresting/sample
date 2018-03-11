@@ -1,0 +1,7 @@
+#sleep 600
+#sleep 10
+screen -S nat123
+cd /opt/nat123linux
+mono nat123linux.sh autologin lganame keps091794 
+#screen -d nat123
+

@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-family: 宋体;
+	font-size: 12px;
+	line-height: 25px;
+	color: #F6CC07;
+	background-image: url(../images/8801.jpg);
+}
+#box {
+	width: 802px;
+	height: 100%;
+	overflow: hidden;
+	margin: 0px auto;
+}
+#logo {
+	width: 287px;
+	height: 127px;
+	padding-top: 19px;
+	float: left;
+}
+#menu {
+	width: 515px;
+	height: 51px;
+	padding-top: 95px;
+	float: left;
+}
+#menu li {
+	list-style-type: none;
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	background-color: #321A04;
+	margin-right: 20px;
+}
+#banner {
+	clear: both;
+	width: 802px;
+	height: 247px;
+}
+.saturate {
+	-webkit-filter: saturate(2);
+}
+

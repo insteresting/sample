@@ -1,0 +1,4 @@
+/etc/profile最后添加
+JAVA_HOME=/opt/jdk_9.0.4_linux_x64_bin
+PATH=.:$JAVA_HOME/bin:$PATH
+export JAVA_HOME PATH

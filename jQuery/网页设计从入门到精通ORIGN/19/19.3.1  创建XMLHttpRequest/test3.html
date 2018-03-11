@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+</style>
+<script>
+function createXMLHttpRequest(){ //创建XMLHttpRequest对象函数
+	var request;
+    if(window.XMLHttpRequest){
+        request = new XMLHttpRequest();
+    }
+    else if (window.ActiveXObject) {
+        try{
+            request = new ActiveXObject("Msxml2.XMLHTTP");
+        }
+        catch (e){
+            try{
+                request = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            catch (e){
+                alert("初始化XMLHttpRequest对象失败，请检查浏览器是否支持XMLHttpRequest组件。");
+            }
+        }
+    }
+	return request;
+}
+var request = createXMLHttpRequest();
+</script>
+</head>
+<body>
+</body>
+</html>

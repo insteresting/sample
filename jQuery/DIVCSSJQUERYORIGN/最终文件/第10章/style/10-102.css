@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 12px;
+	color: #FFF;
+	background-image: url(../images/10201.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#box {
+	width: 740px;
+	height: 320px;
+	background-image: url(../images/10202.png);
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	padding: 30px 30px 0px 30px;
+}
+#pic1 {
+	width: 214px;
+	height: 114px;
+	background-color: #FFF;
+	margin: 10px;
+	padding: 5px;
+	float: left;
+}
+#pic2 {
+	width: 214px;
+	height: 114px;
+	background-color: #FFF;
+	margin: 10px;
+	padding: 5px;
+	float: left;
+}
+#pic3 {
+	width: 214px;
+	height: 114px;
+	background-color: #FFF;
+	margin: 10px;
+	padding: 5px;
+	float: left;
+}
+#pic4 {
+	width: 214px;
+	height: 114px;
+	background-color: #FFF;
+	margin: 10px;
+	padding: 5px;
+	float: left;
+}
+#pic5 {
+	width: 214px;
+	height: 114px;
+	background-color: #FFF;
+	margin: 10px;
+	padding: 5px;
+	float: left;
+}
+#pic6 {
+	width: 214px;
+	height: 114px;
+	background-color: #FFF;
+	margin: 10px;
+	padding: 5px;
+	float: left;
+}
+
+
+

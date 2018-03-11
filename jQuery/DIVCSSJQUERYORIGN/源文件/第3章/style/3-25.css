@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+body{
+	font-size:16px;
+	background-image:url(../images/2501.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+#text{
+	position: absolute;
+	top: 40px;
+	right: 60px;
+	width:280px;
+	height:262px;
+	line-height:25px;
+	color: #FFF;
+}
+
+

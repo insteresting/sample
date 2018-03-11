@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+  <menu1>网站首页</menu1>
+  <menu2>关于我们</menu2>
+  <menu3>摄影作品</menu3>
+  <menu4>经验分享</menu4>
+  <menu5>联系我们</menu5>
+  <item item_url="images/photo1.jpg" />
+  <item item_url="images/photo2.jpg" />
+  <item item_url="images/photo3.jpg" />
+  <item item_url="images/photo4.jpg" />
+  <item item_url="images/photo5.jpg" />
+  <item item_url="images/photo6.jpg" />
+  <item item_url="images/photo7.jpg" />
+  <item item_url="images/photo8.jpg" />
+  <item item_url="images/photo9.jpg" />
+</info>

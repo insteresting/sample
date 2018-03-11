@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 12px;
+	color: #333;
+	line-height: 20px;
+}
+#top {
+	width: 100%;
+	height: 94px;
+	background-image: url(../images/8901.png);
+	background-repeat: repeat-x;
+	border-bottom: solid 1px #D7D7D7;
+}
+#top-main {
+	width: 990px;
+	height: 70px;
+	margin: 0px auto;
+	padding-top: 24px;
+}
+#logo {
+	width: 134px;
+	height: 70px;
+	background-image: url(../images/8902.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	float: left;
+}
+#menu {
+	width: 700px;
+	height: 30px;
+	margin-left: 50px;
+	margin-top: 20px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+}
+#menu span {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#pic {
+	width: 100%;
+	height: 400px;
+	margin-top: 10px;
+	text-align: center;
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+</style>
+<script>
+</script>
+</head>
+<body>
+<p id="p1">IE事件注册</p>
+<script>
+var p1 = document.getElementById("p1");		
+p1.attachEvent("onmouseover", function(){
+    p1.style.background = 'blue';
+});											
+p1.attachEvent("onmouseout", function(){
+    p1.style.background = 'red';
+});										
+</script>
+</body>
+</html>

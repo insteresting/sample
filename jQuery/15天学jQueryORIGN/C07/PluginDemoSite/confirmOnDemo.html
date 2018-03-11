@@ -1,0 +1,44 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>confirmOn插件示例</title>
+<!--jQuery库引用-->
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<!--jQuery插件库文件引用-->
+<script type="text/javascript" src="confirmOn/jquery.confirmon.js"></script>
+<!--jQuery插件引用的CSS文件引用-->
+<link rel="stylesheet" type="text/css" href="confirmOn/jquery.confirmon.css">
+<style type="text/css">
+   body,input{
+	   font-size:9pt;
+   }
+   #test{
+	   width:500px;
+	   height:50px;
+   	   border: 1px solid #090;
+   }
+</style>
+
+<script type="text/javascript">
+  $(document).ready(function(e) {
+	 //使用confirmOn插件
+	//$('#btnchange').confirmOn('click', function() {
+	//   $("#test").html("我的内容被改变了");
+	//});	
+	$('#btnchange').confirmOn({
+		questionText: '确实要更改其中的内容吗?',
+		textYes: '确定',
+		textNo: '取消'
+	},'click', function() {
+        $("#test").html("我的内容被改变了");
+	});		
+});
+</script>
+
+</head>
+<body>
+<div id="test">这个示例演示了confirmOn插件的使用方法</div>
+<input name="change" type="button" id="btnchange" value="更改内容">
+</body>
+</html>

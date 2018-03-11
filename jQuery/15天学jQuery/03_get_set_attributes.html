@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+	   <!--
+body.#nav{margin:0;padding:0;border:0;}
+body{
+font-family:arial,宋体，serif;
+font-size:12px;
+}
+#nav{
+line-height:24px; list-style-type:none; background:#666;
+}
+
+#nav a{
+display:block; width:80px; text-align:center;
+}
+
+#nav a:link {
+color:#666; text-decoration:none;
+}
+
+#nav a:visited{
+color:#666; text-decoration:none;
+}
+
+#nav a:hover {
+color:#FFF;text-decoration:none; font-weight:bold;
+}
+
+#nav li {
+float:left; width:80px; background:#CCC;
+}
+#nav li a:hover{
+background:#999;
+}
+
+#nav li ul {
+line-height:27px; list-style-type:none; text-align:left;
+left:-999em; width:180px; posoition:absolute;
+}
+
+#nav li ul li{
+float:left; width:180px;
+background:#F6F6F6;
+}
+#nav li ul a {
+display:block; width:156px; text-align:left; padding-left:24px;
+}
+#nav li ul a:link {
+color:#666; text-decoration:none;
+{
+#nav li ul a:visited{
+color:#666;text-decoration:none;
+}
+#nav li ul a:hover{
+color:#F3F3F3; text-decoration:none; font-weight:normal;
+background:#C00;
+}
+#nav li:hover ul{
+left:auto;
+}
+#nav li.sfhover ul {
+left:auto;
+}
+#content {
+clear:left;
+}
+
+	     -->
+    </style>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(e){
+      $("#btn_getAttr").click(function(e){
+      //显示id为company_info的title属性值
+      var str="<br\>"+$("#company_info").attr("title");
+      //显示id为product_info的href属性值
+      str+="<br\>"+$("#product_info").attr("href");
+      //显示id为cultrue_info的id属性值
+      str+="<br\>"+$("#culture_info").attr("id");
+      //显示id为btn_getAttr的value属性值
+      str+="<br\>"+$("#btn_getAttr").attr("value");
+      //在div中显示的值
+      $("#attr_info").append(str);
+      });
+      $("#btn_setAttr").click(function(e){
+      //设置title属性
+      $("#company_info").attr("title","公司的发展历程和发展经验");
+      //设置href属性
+      $("#product_info").attr("href","http://www.microsoft.com");
+      //设置id属性
+      $("#culture_info").attr("id","btn_culture_info");
+      //设置联系人的title属性
+      $("#contactus").attr("title","欢迎联系我们来获取更多信息");
+      //同时设置2个属性的值
+      $("#company_info").attr({
+      "href":"http://www.microsoft.com",
+      "title":"欢迎进入 微软网站"
+      });
+      });
+      });
+    </script>
+    <tilte>获取和设置属性</title>
+</head>
+<body>
+  <ul id="nav">
+    <li><a href="http://www.xxx.com/companyinfo" id="company_info" title="介绍公司的相关资讯">公司信息</a></li>
+    <li><a href="http://www.xxx.com/productinfo" id="productinfo" title="公司的产品信息">产品简介</a></li>
+    <li><a href="http://www.xxx.com/companyculture" id="culture_info" title="公司的文化信息">公司文化</a></li>
+    <li><a href="http://www.xxx.com/contactus" id="contactus" title="联系方式">联系我们</a></li>
+  </ul>
+  <div id="content"></div>
+  <!--属性的信息显示如下-->
+  <div id="attr_info"></div>
+  <input id="btn_getAttr" type="button" value="显示属性信息">
+  <input id="btn_setAttr" type="button" value="设置属性信息">
+</div>
+</body>
+</html>
+     
+      

@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body {
+	font-size: 12px;
+	color: #666;
+	line-height: 20px;
+}
+#box {
+	width: 253px;
+	height: 360px;
+	background-image: url(../images/7701.jpg);
+	background-repeat: no-repeat;
+	margin: 10px auto 0px auto;
+	padding: 55px 35px 13px 68px;
+}
+#box li {
+	list-style-type: none;
+	background-color: #EFEFEF;
+	line-height: 28px;
+	margin-bottom: 8px;
+	padding-left: 10px;
+}
+.link1:link {
+	color: #F60;
+	text-decoration: none;
+}
+.link1:hover {
+	color: #06C;
+	text-decoration: underline;
+}
+.link1: active {
+	color: #003;
+	text-decoration: underline;
+}
+.link1:visited {
+	color: #666;
+	text-decoration: line-through;
+}
+.link2:link {
+	color: #F60;
+	text-decoration: underline;
+}
+.link2:hover {
+	color: #003;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-left: 1px;
+}
+.link2:active {
+	color: #333;
+	text-decoration: none;
+	margin-top: 1px;
+	margin-left: 1px;
+}
+.link2:visited {
+	color: #600;
+	text-decoration: overline;
+}
+
+

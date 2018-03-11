@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>网页布局基本方法</title>
+<style type="text/css">
+body {
+    padding: 0; 						/* 清除页边距（兼容非IE浏览器） */
+    margin: 0; 						/* 清除页边距（兼容IE浏览器） */
+}
+div {
+    width: 200px; 						/* 固定元素的宽度 */
+    height: 100px; 						/* 固定元素的高度 */
+    border: solid 2px red; 				/* 边框样式 */
+    position: absolute; 					/* 绝对定位 */
+}
+#box1 {
+    left: 50px; 						/* 距离左侧窗口距离50像素 */
+    top: 50px; 						/* 距离顶部窗口距离50像素*/
+}
+#box2 { left: 40%; }						/* 距离左侧窗口距离为窗口宽度的40% */
+#box3 {
+    right: 50px; 						/* 距离右侧距离50像素*/
+    bottom: 50px						/* 距离底部距离50像素*/
+}
+#wrap {/* 定义定位包含框 */
+	width:300px; 					/* 定义包含块的宽度 */
+    height:200px; 						/* 定义包含块的高度 */
+    float:right; 						/* 定义包含块向右浮动 */
+    margin:100px; 						/* 包含块的外边界 */
+    border:solid 1px blue; 				/* 边框样式 */
+    position:relative; 					/* 相对定位 */
+}
+</style>
+</head>
+<body>
+<div id="box1">盒子1</div>
+<div id="wrap">
+    <div id="box2">盒子2</div>
+    <div id="box3">盒子3</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	border:0px;
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family:宋体;
+	font-size:12px;
+	color:#FFF;
+	line-height:25px;
+	background-image:url(../images/4401.jpg);
+	background-position:left top;
+	background-attachment:fixed;
+}
+#box{
+	width:900px;
+	height:100%;
+	overflow:hidden;
+	margin:80px auto 0px auto;
+}
+#top{
+	width:900px;
+	height:95px;
+	margin-bottom:40px;
+}
+#main{
+	width:880px;
+	height:100%;
+	overflow:hidden;
+	margin:0px auto;
+}
+#pic,#pic01,#pic02,#pic03,#pic04,#pic05,#pic06,#pic07,#pic08,#pic09,#pic10,#pic11,#pic12,#pic13,#pic14{
+	float:left;
+	width:200px;
+	height:159px;
+	text-align:center;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+}
